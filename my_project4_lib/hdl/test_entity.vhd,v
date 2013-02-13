@@ -1,0 +1,41 @@
+head	1.1;
+access;
+symbols
+	initial:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2013.02.13.15.27.02;	author Owner;	state Exp;
+branches;
+next	;
+
+
+desc
+@-- no description --
+@
+
+
+1.1
+log
+@-- no description --
+@
+text
+@--
+-- VHDL Entity my_project4_lib.test.arch_name
+--
+-- Created:
+--          by - Owner.UNKNOWN (OWNER-PC)
+--          at - 10:25:37 02/13/2013
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY test IS
+END ENTITY test;
+
+@
