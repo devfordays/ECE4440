@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Register_Tracker_Control_Logic
+DEFAULT_FILE atom Register_Tracker_Control_Logic_Register_Tracker_Control_Logic.vhd

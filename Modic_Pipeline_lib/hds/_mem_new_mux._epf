@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Mem_new_MUX
+DEFAULT_FILE atom Mem_new_MUX_Mem_new_MUX.vhd

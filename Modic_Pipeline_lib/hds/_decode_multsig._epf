@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Decode_MultSig
+DEFAULT_FILE atom Decode_MultSig_Decode_MultSig.vhd

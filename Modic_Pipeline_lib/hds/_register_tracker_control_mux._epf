@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Register_Tracker_Control_MUX
+DEFAULT_FILE atom Register_Tracker_Control_MUX_Register_Tracker_Control_MUX.vhd

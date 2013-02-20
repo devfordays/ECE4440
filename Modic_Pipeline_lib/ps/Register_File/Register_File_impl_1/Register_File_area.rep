@@ -1,0 +1,46 @@
+//  Precision RTL Synthesis 2012a.10 (Production Release) Fri Jun 15 08:14:11 PDT 2012
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2012, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 7 Owner@OWNER-PC  6.01.7600 x86
+//  
+//  Start time Tue Feb 12 22:00:41 2013
+
+***************************************************************
+Device Utilization for EP2C70F896I
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               64      606      10.56%
+LUTs                              418     68416     0.61%
+Registers                         240     68416     0.35%
+Memory Bits                       0       1152000   0.00%
+DSP block 9-bit elems             0       300       0.00%
+---------------------------------------------------------------
+
+*************************************************************************
+
+Library: modic_pipeline_lib    Cell: Register_File    View: Register_File
+
+*************************************************************************
+
+  Cell                   Library  References     Total Area
+
+ cycloneii_io            cycloneii    64 x      1     64 IOs
+ cycloneii_lcell_comb    cycloneii   418 x      1    418 LUTs
+ cycloneii_lcell_ff      cycloneii   240 x      1    240 Registers
+
+ Number of ports :                      64
+ Number of nets :                      770
+ Number of instances :                 722
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of IOs :                        64
+ Number of LUTs :                      418
+ Number of Registers :                 240
+ Number of accumulated instances :     722

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Fetch_Instr_MUX
+DEFAULT_FILE atom Fetch_Instr_MUX_Fetch_Instr_MUX.vhd

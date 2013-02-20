@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom memoryinit
+DEFAULT_FILE atom memoryinit/memoryinit.txt

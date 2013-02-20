@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Mem_Multiplexor
+DEFAULT_FILE atom Mem_Multiplexor_Mem_Multiplexor.vhd

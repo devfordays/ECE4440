@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom testing_last_stage
+DEFAULT_FILE atom testing_last_stage_testing_last_stage.vhd

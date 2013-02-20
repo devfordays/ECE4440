@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Decode_Controller
+DEFAULT_FILE atom Decode_Controller_Decode_Controller.vhd

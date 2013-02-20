@@ -1,0 +1,11 @@
+vendor_name = exemplar
+source_file = 1, C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Dest_MUX_Decode_Dest_MUX.vhd
+design_name = Decode_Dest_MUX
+instance =      comp,         dest_obuf(3),         dest_obuf(3),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =      comp,         dest_obuf(2),         dest_obuf(2),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =      comp,         dest_obuf(1),         dest_obuf(1),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =      comp,         dest_obuf(0),         dest_obuf(0),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =       net,              dest(3),              dest(3),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =       net,              dest(2),              dest(2),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =       net,              dest(1),              dest(1),      Decode_Dest_MUX,         1, 28:-1:28:
+instance =       net,              dest(0),              dest(0),      Decode_Dest_MUX,         1, 28:-1:28:

@@ -1,0 +1,35 @@
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Controller_Decode_Controller.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Dest_MUX_Decode_Dest_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Extra_MUX_Decode_Extra_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Left_MUX_Decode_Left_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_MultSig_Decode_MultSig.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Right_MUX_Decode_Right_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Stage_Decode_Stage.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Execute_ALU_Execute_ALU.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Execute_Stage_ChangeNames_Execute_Stage_ChangeNames.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Reg_Reg.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Execute_JumpUnit_Execute_JumpUnit.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Execute_Stage_Execute_Stage.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Incrementer_Fetch_Incrementer.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Instr_MUX_Fetch_Instr_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Mem_MUX_Fetch_Mem_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_PC_MUX_Fetch_PC_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_PCVal_MUX_Fetch_PCVal_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Stage_Fetch_Stage.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_new_MUX_Mem_new_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_Multi16_Mem_Multi16.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_Multi18_Mem_Multi18.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_Multiplexor_Mem_Multiplexor.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_Multi1_Mem_Multi1.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Mem_Stage_Mem_Stage.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_File_four_sixteen_MUX_Register_File_four_sixteen_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_File_TriState_Register_File_TriState.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_File_Register_File.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_Tracker_Control_Logic_Register_Tracker_Control_Logic.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_Tracker_Control_MUX_Register_Tracker_Control_MUX.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_Tracker_Control_OR_Register_Tracker_Control_OR.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Register_Tracker_Register_Tracker.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/WB_Stage_WB_Stage.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+add_input_file {"C:/Users/Owner/Desktop/Past\ Classes/ECE\ 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Five_Stage_Pipeline_Five_Stage_Pipeline.vhd"} -format {VHDL} -work Modic_Pipeline_lib
+setup_design -design Five_Stage_Pipeline
+setup_design -architecture Five_Stage_Pipeline

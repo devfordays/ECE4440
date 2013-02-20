@@ -1,0 +1,2576 @@
+(edif Fetch_Stage 
+ (edifVersion 2 0 0)
+ (edifLevel 0)
+ (keywordMap (keywordLevel 0))
+ (status 
+  (written 
+   (timestamp 2012 11 19 21 50 06)
+   (program "Precision RTL Synthesis" (version "2012a.10"))
+   (author "Mentor Graphics Corporation")))
+ (external cycloneii 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell cycloneii_lcell_comb (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port dataa (direction INPUT))
+     (port datab (direction INPUT))
+     (port datac (direction INPUT))
+     (port datad (direction INPUT))
+     (port cin (direction INPUT))
+     (port combout (direction OUTPUT))
+     (port cout (direction OUTPUT)))))
+  (cell VCC (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port Y (direction OUTPUT)))))
+  (cell latch (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port d (direction INPUT))
+     (port ena (direction INPUT))
+     (port q (direction OUTPUT)))))
+  (cell cycloneii_io (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port oe (direction INPUT))
+     (port outclk (direction INPUT))
+     (port outclkena (direction INPUT))
+     (port inclk (direction INPUT))
+     (port inclkena (direction INPUT))
+     (port areset (direction INPUT))
+     (port sreset (direction INPUT))
+     (port devclrn (direction INPUT))
+     (port devpor (direction INPUT))
+     (port devoe (direction INPUT))
+     (port linkin (direction INPUT))
+     (port differentialin (direction INPUT))
+     (port regout (direction OUTPUT))
+     (port combout (direction OUTPUT))
+     (port padio (direction INOUT))
+     (port differentialout (direction OUTPUT))
+     (port linkout (direction OUTPUT)))))
+  (cell cycloneii_lcell_ff (cellType GENERIC)
+   (view NETLIST  (viewType NETLIST)
+    (interface 
+     (port datain (direction INPUT))
+     (port sdata (direction INPUT))
+     (port clk (direction INPUT))
+     (port ena (direction INPUT))
+     (port aclr (direction INPUT))
+     (port sclr (direction INPUT))
+     (port sload (direction INPUT))
+     (port devclrn (direction INPUT))
+     (port devpor (direction INPUT))
+     (port regout (direction OUTPUT))))))
+ (library OPERATORS 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell inc_16_0 (cellType GENERIC)
+   (property function (string "inc"))
+   (property size (string "16"))
+   (property tech (string "yeager"))
+   (property generics (string "inc_size16_0_0_sign0_small"))
+   (view IMPLEMENTATION  (viewType NETLIST)
+    (interface 
+     (port cin (direction INPUT))
+     (port (array (rename a "a(15:0)") 16 )(direction INPUT))
+     (port (array (rename d "d(15:0)") 16 )(direction OUTPUT))
+     (port cout (direction OUTPUT))
+     (port p_pc1_0_ (direction INPUT))
+     (port p_reset_int (direction INPUT))
+     (port p_int_int (direction INPUT)))
+    (contents 
+     (instance ix2247z52925 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ps_vcc (viewRef NETLIST  (cellRef VCC (libraryRef cycloneii ))))
+     (instance ix2247z52926 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52927 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52928 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52929 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52930 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52931 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52932 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52933 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52934 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52935 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52936 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52937 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52938 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5aa0"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (instance ix2247z52940 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "00aa"))
+      (property operation_mode (string "arithmetic")))
+     (instance ix2247z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "5a5a"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "normal"))
+      (property cin_used (string "true")))
+     (instance ix2247z52939 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "ab54"))
+      (property sum_lutc_input (string "cin"))
+      (property operation_mode (string "arithmetic"))
+      (property cin_used (string "true")))
+     (net nx2247z2 
+      (joined 
+       (portRef (member a 0))
+       (portRef dataa (instanceRef ix2247z52923 ))))
+     (net nx2247z4 
+      (joined 
+       (portRef (member a 1))
+       (portRef dataa (instanceRef ix2247z52925 ))))
+     (net nx2247z6 
+      (joined 
+       (portRef (member a 2))
+       (portRef dataa (instanceRef ix2247z52926 ))))
+     (net nx2247z8 
+      (joined 
+       (portRef (member a 3))
+       (portRef dataa (instanceRef ix2247z52927 ))))
+     (net nx2247z10 
+      (joined 
+       (portRef (member a 4))
+       (portRef dataa (instanceRef ix2247z52928 ))))
+     (net nx2247z12 
+      (joined 
+       (portRef (member a 5))
+       (portRef dataa (instanceRef ix2247z52929 ))))
+     (net nx2247z14 
+      (joined 
+       (portRef (member a 6))
+       (portRef dataa (instanceRef ix2247z52930 ))))
+     (net nx2247z16 
+      (joined 
+       (portRef (member a 7))
+       (portRef dataa (instanceRef ix2247z52931 ))))
+     (net nx2247z18 
+      (joined 
+       (portRef (member a 8))
+       (portRef dataa (instanceRef ix2247z52932 ))))
+     (net nx2247z20 
+      (joined 
+       (portRef (member a 9))
+       (portRef dataa (instanceRef ix2247z52933 ))))
+     (net nx2247z22 
+      (joined 
+       (portRef (member a 10))
+       (portRef dataa (instanceRef ix2247z52934 ))))
+     (net nx2247z24 
+      (joined 
+       (portRef (member a 11))
+       (portRef dataa (instanceRef ix2247z52935 ))))
+     (net nx2247z26 
+      (joined 
+       (portRef (member a 12))
+       (portRef dataa (instanceRef ix2247z52936 ))))
+     (net nx2247z28 
+      (joined 
+       (portRef (member a 13))
+       (portRef dataa (instanceRef ix2247z52937 ))))
+     (net nx2247z30 
+      (joined 
+       (portRef (member a 14))
+       (portRef dataa (instanceRef ix2247z52938 ))))
+     (net nx37973z1 
+      (joined 
+       (portRef (member d 15))
+       (portRef combout (instanceRef ix2247z52939 ))))
+     (net nx2247z31 
+      (joined 
+       (portRef cout (instanceRef ix2247z52939 ))
+       (portRef cin (instanceRef ix2247z52938 ))))
+     (net nx38970z1 
+      (joined 
+       (portRef (member d 14))
+       (portRef combout (instanceRef ix2247z52938 ))))
+     (net nx2247z29 
+      (joined 
+       (portRef cout (instanceRef ix2247z52938 ))
+       (portRef cin (instanceRef ix2247z52937 ))))
+     (net nx39967z1 
+      (joined 
+       (portRef (member d 13))
+       (portRef combout (instanceRef ix2247z52937 ))))
+     (net nx2247z27 
+      (joined 
+       (portRef cout (instanceRef ix2247z52937 ))
+       (portRef cin (instanceRef ix2247z52936 ))))
+     (net nx40964z1 
+      (joined 
+       (portRef (member d 12))
+       (portRef combout (instanceRef ix2247z52936 ))))
+     (net nx2247z25 
+      (joined 
+       (portRef cout (instanceRef ix2247z52936 ))
+       (portRef cin (instanceRef ix2247z52935 ))))
+     (net nx41961z1 
+      (joined 
+       (portRef (member d 11))
+       (portRef combout (instanceRef ix2247z52935 ))))
+     (net nx2247z23 
+      (joined 
+       (portRef cout (instanceRef ix2247z52935 ))
+       (portRef cin (instanceRef ix2247z52934 ))))
+     (net nx42958z1 
+      (joined 
+       (portRef (member d 10))
+       (portRef combout (instanceRef ix2247z52934 ))))
+     (net nx2247z21 
+      (joined 
+       (portRef cout (instanceRef ix2247z52934 ))
+       (portRef cin (instanceRef ix2247z52933 ))))
+     (net nx43955z1 
+      (joined 
+       (portRef (member d 9))
+       (portRef combout (instanceRef ix2247z52933 ))))
+     (net nx2247z19 
+      (joined 
+       (portRef cout (instanceRef ix2247z52933 ))
+       (portRef cin (instanceRef ix2247z52932 ))))
+     (net nx44952z1 
+      (joined 
+       (portRef (member d 8))
+       (portRef combout (instanceRef ix2247z52932 ))))
+     (net nx2247z17 
+      (joined 
+       (portRef cout (instanceRef ix2247z52932 ))
+       (portRef cin (instanceRef ix2247z52931 ))))
+     (net nx45949z1 
+      (joined 
+       (portRef (member d 7))
+       (portRef combout (instanceRef ix2247z52931 ))))
+     (net nx2247z15 
+      (joined 
+       (portRef cout (instanceRef ix2247z52931 ))
+       (portRef cin (instanceRef ix2247z52930 ))))
+     (net nx46946z1 
+      (joined 
+       (portRef (member d 6))
+       (portRef combout (instanceRef ix2247z52930 ))))
+     (net nx2247z13 
+      (joined 
+       (portRef cout (instanceRef ix2247z52930 ))
+       (portRef cin (instanceRef ix2247z52929 ))))
+     (net nx62798z1 
+      (joined 
+       (portRef (member d 5))
+       (portRef combout (instanceRef ix2247z52929 ))))
+     (net nx2247z11 
+      (joined 
+       (portRef cout (instanceRef ix2247z52929 ))
+       (portRef cin (instanceRef ix2247z52928 ))))
+     (net nx63795z1 
+      (joined 
+       (portRef (member d 4))
+       (portRef combout (instanceRef ix2247z52928 ))))
+     (net nx2247z9 
+      (joined 
+       (portRef cout (instanceRef ix2247z52928 ))
+       (portRef cin (instanceRef ix2247z52927 ))))
+     (net nx64792z1 
+      (joined 
+       (portRef (member d 3))
+       (portRef combout (instanceRef ix2247z52927 ))))
+     (net nx2247z7 
+      (joined 
+       (portRef cout (instanceRef ix2247z52927 ))
+       (portRef cin (instanceRef ix2247z52926 ))))
+     (net nx253z1 
+      (joined 
+       (portRef (member d 2))
+       (portRef combout (instanceRef ix2247z52926 ))))
+     (net nx2247z5 
+      (joined 
+       (portRef cout (instanceRef ix2247z52926 ))
+       (portRef cin (instanceRef ix2247z52925 ))))
+     (net nx1250z1 
+      (joined 
+       (portRef (member d 1))
+       (portRef combout (instanceRef ix2247z52925 ))))
+     (net nx2247z3 
+      (joined 
+       (portRef cout (instanceRef ix2247z52925 ))
+       (portRef cin (instanceRef ix2247z52923 ))))
+     (net nx2247z1 
+      (joined 
+       (portRef (member d 0))
+       (portRef combout (instanceRef ix2247z52923 ))))
+     (net pc1_0__dup_124 
+      (joined 
+       (portRef p_pc1_0_ )
+       (portRef dataa (instanceRef ix2247z52940 ))))
+     (net reset_int_dup_125 
+      (joined 
+       (portRef p_reset_int )
+       (portRef dataa (instanceRef ix2247z52939 ))))
+     (net int_int_dup_126 
+      (joined 
+       (portRef p_int_int )
+       (portRef datab (instanceRef ix2247z52939 ))))
+     (net nx2247z32 
+      (joined 
+       (portRef cout (instanceRef ix2247z52940 ))
+       (portRef cin (instanceRef ix2247z52939 ))))
+     (net nx_inc_16_0_vcc_net 
+      (joined 
+       (portRef Y (instanceRef ps_vcc ))
+       (portRef datad (instanceRef ix2247z52925 ))
+       (portRef datad (instanceRef ix2247z52926 ))
+       (portRef datad (instanceRef ix2247z52927 ))
+       (portRef datad (instanceRef ix2247z52928 ))
+       (portRef datad (instanceRef ix2247z52929 ))
+       (portRef datad (instanceRef ix2247z52930 ))
+       (portRef datad (instanceRef ix2247z52931 ))
+       (portRef datad (instanceRef ix2247z52932 ))
+       (portRef datad (instanceRef ix2247z52933 ))
+       (portRef datad (instanceRef ix2247z52934 ))
+       (portRef datad (instanceRef ix2247z52935 ))
+       (portRef datad (instanceRef ix2247z52936 ))
+       (portRef datad (instanceRef ix2247z52937 ))
+       (portRef datad (instanceRef ix2247z52938 ))
+       (portRef datad (instanceRef ix2247z52940 ))
+       (portRef datad (instanceRef ix2247z52923 ))
+       (portRef datad (instanceRef ix2247z52939 ))))))))
+ (library modic_pipeline_lib 
+  (edifLevel 0)
+  (technology (numberDefinition ))
+  (cell Fetch_Stage (cellType GENERIC)
+   (view Fetch_Stage  (viewType NETLIST)
+    (interface 
+     (port (array (rename maddr "maddr(15:0)") 16 )(direction OUTPUT))
+     (port (array (rename inst "inst(15:0)") 16 )(direction OUTPUT))
+     (port (array (rename pcval "pcval(15:0)") 16 )(direction OUTPUT))
+     (port (array (rename mdata "mdata(15:0)") 16 )(direction INPUT))
+     (port (array (rename jaddr "jaddr(15:0)") 16 )(direction INPUT))
+     (port mdelay (direction INPUT))
+     (port stall (direction INPUT))
+     (port reset (direction INPUT))
+     (port jump (direction INPUT))
+     (port int (direction INPUT))
+     (port clock (direction INPUT)
+      (property INFF (string "FALSE"))))
+    (property DESIGN_IS_RTL (string "NO"))
+    (contents 
+     (instance Determiner_modgen_inc_19 (viewRef IMPLEMENTATION  (cellRef inc_16_0 (libraryRef OPERATORS ))))
+     (instance Determiner_lat_instr_15_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_14_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_13_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_12_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_11_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_10_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_9_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_8_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_7_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_6_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_5_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_4_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_3_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_2_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_1_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance Determiner_lat_instr_0_ (viewRef NETLIST  (cellRef latch (libraryRef cycloneii ))))
+     (instance PWR (viewRef NETLIST  (cellRef VCC (libraryRef cycloneii ))))
+     (instance stall_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance reset_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_9__ix61105z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_8__ix60108z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_7__ix59111z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_6__ix58114z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_5__ix57117z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_4__ix56120z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_3__ix55123z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_2__ix54126z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_15__ix37006z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_14__ix38003z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_13__ix39000z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_12__ix39997z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_11__ix40994z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_10__ix41991z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_1__ix53129z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance prec_sel2mux_Determiner_rtlcn0_selectBus2_0__ix52132z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property lut_mask (string "f3c0"))
+      (property INIT (string "d8"))
+      (property operation_mode (string "normal")))
+     (instance pcval_obuf_9_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_8_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_7_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_6_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_5_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_4_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_3_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_2_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_15_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_14_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_13_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_12_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_11_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_10_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_1_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance pcval_obuf_0_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdelay_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_9_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_8_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_7_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_6_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_5_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_4_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_3_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_2_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_15_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_14_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_13_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_12_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_11_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_10_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_1_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance mdata_ibuf_0_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_9_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_8_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_7_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_6_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_5_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_4_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_3_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_2_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_15_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_14_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_13_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_12_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_11_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_10_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_1_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance maddr_obuf_0_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jump_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_9_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_8_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_7_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_6_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_5_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_4_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_3_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_2_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_15_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_14_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_13_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_12_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_11_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_10_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_1_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance jaddr_ibuf_0_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance int_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_9_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_8_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_7_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_6_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_5_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_4_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_3_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_2_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_15_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_14_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_13_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_12_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_11_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_10_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_1_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance inst_obuf_0_ (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "output"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance clock_ibuf (viewRef NETLIST  (cellRef cycloneii_io (libraryRef cycloneii )))
+      (property operation_mode (string "input"))
+      (property input_register_mode (string "none"))
+      (property output_register_mode (string "none"))
+      (property oe_register_mode (string "none"))
+      (property tie_off_output_clock_enable (string "false"))
+      (property tie_off_oe_clock_enable (string "false"))
+      (property same_tech_noopt (string "T")))
+     (instance Regist_reg_output_9_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_8_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_7_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_6_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_5_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_4_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_3_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_2_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_15_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_14_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_13_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_12_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_11_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_10_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_1_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance Regist_reg_output_0_ (viewRef NETLIST  (cellRef cycloneii_lcell_ff (libraryRef cycloneii ))))
+     (instance ix55923z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "aaab")))
+     (instance ix64931z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix392z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix1389z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix2386z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix3383z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix4380z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix5377z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix6374z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix7371z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix8368z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix60908z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix59911z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix58914z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix57917z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix56920z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix55923z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "888c")))
+     (instance ix38003z52926 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "fffe")))
+     (instance ix52132z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix53129z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix54126z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix55123z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix56120z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix57117z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix58114z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix59111z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix60108z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix61105z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix41991z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix40994z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix39997z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix39000z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix38003z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix37006z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "ccca")))
+     (instance ix38003z52925 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "000e")))
+     (instance ix38003z52927 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "eeee")))
+     (instance ix52132z52925 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "3232")))
+     (instance ix60050z52936 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52935 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52934 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52933 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52932 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52931 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52930 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52929 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52928 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52927 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52926 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52925 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52924 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix60050z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (instance ix22506z52923 (viewRef NETLIST  (cellRef cycloneii_lcell_comb (libraryRef cycloneii )))
+      (property operation_mode (string "normal"))
+      (property lut_mask (string "0202")))
+     (net mdata_15_ 
+      (joined 
+       (portRef (member mdata 0))
+       (portRef padio (instanceRef mdata_ibuf_15_ ))))
+     (net mdata_14_ 
+      (joined 
+       (portRef (member mdata 1))
+       (portRef padio (instanceRef mdata_ibuf_14_ ))))
+     (net mdata_13_ 
+      (joined 
+       (portRef (member mdata 2))
+       (portRef padio (instanceRef mdata_ibuf_13_ ))))
+     (net mdata_12_ 
+      (joined 
+       (portRef (member mdata 3))
+       (portRef padio (instanceRef mdata_ibuf_12_ ))))
+     (net mdata_11_ 
+      (joined 
+       (portRef (member mdata 4))
+       (portRef padio (instanceRef mdata_ibuf_11_ ))))
+     (net mdata_10_ 
+      (joined 
+       (portRef (member mdata 5))
+       (portRef padio (instanceRef mdata_ibuf_10_ ))))
+     (net mdata_9_ 
+      (joined 
+       (portRef (member mdata 6))
+       (portRef padio (instanceRef mdata_ibuf_9_ ))))
+     (net mdata_8_ 
+      (joined 
+       (portRef (member mdata 7))
+       (portRef padio (instanceRef mdata_ibuf_8_ ))))
+     (net mdata_7_ 
+      (joined 
+       (portRef (member mdata 8))
+       (portRef padio (instanceRef mdata_ibuf_7_ ))))
+     (net mdata_6_ 
+      (joined 
+       (portRef (member mdata 9))
+       (portRef padio (instanceRef mdata_ibuf_6_ ))))
+     (net mdata_5_ 
+      (joined 
+       (portRef (member mdata 10))
+       (portRef padio (instanceRef mdata_ibuf_5_ ))))
+     (net mdata_4_ 
+      (joined 
+       (portRef (member mdata 11))
+       (portRef padio (instanceRef mdata_ibuf_4_ ))))
+     (net mdata_3_ 
+      (joined 
+       (portRef (member mdata 12))
+       (portRef padio (instanceRef mdata_ibuf_3_ ))))
+     (net mdata_2_ 
+      (joined 
+       (portRef (member mdata 13))
+       (portRef padio (instanceRef mdata_ibuf_2_ ))))
+     (net mdata_1_ 
+      (joined 
+       (portRef (member mdata 14))
+       (portRef padio (instanceRef mdata_ibuf_1_ ))))
+     (net mdata_0_ 
+      (joined 
+       (portRef (member mdata 15))
+       (portRef padio (instanceRef mdata_ibuf_0_ ))))
+     (net jaddr_15_ 
+      (joined 
+       (portRef (member jaddr 0))
+       (portRef padio (instanceRef jaddr_ibuf_15_ ))))
+     (net jaddr_14_ 
+      (joined 
+       (portRef (member jaddr 1))
+       (portRef padio (instanceRef jaddr_ibuf_14_ ))))
+     (net jaddr_13_ 
+      (joined 
+       (portRef (member jaddr 2))
+       (portRef padio (instanceRef jaddr_ibuf_13_ ))))
+     (net jaddr_12_ 
+      (joined 
+       (portRef (member jaddr 3))
+       (portRef padio (instanceRef jaddr_ibuf_12_ ))))
+     (net jaddr_11_ 
+      (joined 
+       (portRef (member jaddr 4))
+       (portRef padio (instanceRef jaddr_ibuf_11_ ))))
+     (net jaddr_10_ 
+      (joined 
+       (portRef (member jaddr 5))
+       (portRef padio (instanceRef jaddr_ibuf_10_ ))))
+     (net jaddr_9_ 
+      (joined 
+       (portRef (member jaddr 6))
+       (portRef padio (instanceRef jaddr_ibuf_9_ ))))
+     (net jaddr_8_ 
+      (joined 
+       (portRef (member jaddr 7))
+       (portRef padio (instanceRef jaddr_ibuf_8_ ))))
+     (net jaddr_7_ 
+      (joined 
+       (portRef (member jaddr 8))
+       (portRef padio (instanceRef jaddr_ibuf_7_ ))))
+     (net jaddr_6_ 
+      (joined 
+       (portRef (member jaddr 9))
+       (portRef padio (instanceRef jaddr_ibuf_6_ ))))
+     (net jaddr_5_ 
+      (joined 
+       (portRef (member jaddr 10))
+       (portRef padio (instanceRef jaddr_ibuf_5_ ))))
+     (net jaddr_4_ 
+      (joined 
+       (portRef (member jaddr 11))
+       (portRef padio (instanceRef jaddr_ibuf_4_ ))))
+     (net jaddr_3_ 
+      (joined 
+       (portRef (member jaddr 12))
+       (portRef padio (instanceRef jaddr_ibuf_3_ ))))
+     (net jaddr_2_ 
+      (joined 
+       (portRef (member jaddr 13))
+       (portRef padio (instanceRef jaddr_ibuf_2_ ))))
+     (net jaddr_1_ 
+      (joined 
+       (portRef (member jaddr 14))
+       (portRef padio (instanceRef jaddr_ibuf_1_ ))))
+     (net jaddr_0_ 
+      (joined 
+       (portRef (member jaddr 15))
+       (portRef padio (instanceRef jaddr_ibuf_0_ ))))
+     (net mdelay 
+      (joined 
+       (portRef mdelay )
+       (portRef padio (instanceRef mdelay_ibuf ))))
+     (net stall 
+      (joined 
+       (portRef stall )
+       (portRef padio (instanceRef stall_ibuf ))))
+     (net reset 
+      (joined 
+       (portRef reset )
+       (portRef padio (instanceRef reset_ibuf ))))
+     (net jump 
+      (joined 
+       (portRef jump )
+       (portRef padio (instanceRef jump_ibuf ))))
+     (net int 
+      (joined 
+       (portRef int )
+       (portRef padio (instanceRef int_ibuf ))))
+     (net clock 
+      (joined 
+       (portRef clock )
+       (portRef padio (instanceRef clock_ibuf ))))
+     (net pc1_15_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_15_ ))
+       (portRef dataa (instanceRef ix22506z52923 ))))
+     (net pc1_14_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_14_ ))
+       (portRef dataa (instanceRef ix60050z52923 ))))
+     (net pc1_13_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_13_ ))
+       (portRef dataa (instanceRef ix60050z52924 ))))
+     (net pc1_12_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_12_ ))
+       (portRef dataa (instanceRef ix60050z52925 ))))
+     (net pc1_11_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_11_ ))
+       (portRef dataa (instanceRef ix60050z52926 ))))
+     (net pc1_10_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_10_ ))
+       (portRef dataa (instanceRef ix60050z52927 ))))
+     (net pc1_9_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_9_ ))
+       (portRef dataa (instanceRef ix60050z52928 ))))
+     (net pc1_8_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_8_ ))
+       (portRef dataa (instanceRef ix60050z52929 ))))
+     (net pc1_7_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_7_ ))
+       (portRef dataa (instanceRef ix60050z52930 ))))
+     (net pc1_6_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_6_ ))
+       (portRef dataa (instanceRef ix60050z52931 ))))
+     (net pc1_5_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_5_ ))
+       (portRef dataa (instanceRef ix60050z52932 ))))
+     (net pc1_4_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_4_ ))
+       (portRef dataa (instanceRef ix60050z52933 ))))
+     (net pc1_3_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_3_ ))
+       (portRef dataa (instanceRef ix60050z52934 ))))
+     (net pc1_2_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_2_ ))
+       (portRef dataa (instanceRef ix60050z52935 ))))
+     (net pc1_1_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_1_ ))
+       (portRef dataa (instanceRef ix60050z52936 ))))
+     (net pc1_0_ 
+      (joined 
+       (portRef regout (instanceRef Regist_reg_output_0_ ))
+       (portRef p_pc1_0_ (instanceRef Determiner_modgen_inc_19 ))
+       (portRef dataa (instanceRef ix52132z52925 ))))
+     (net nx37006z1 
+      (joined 
+       (portRef (member d 0)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_15_ ))))
+     (net nx38003z1 
+      (joined 
+       (portRef (member d 1)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_14_ ))))
+     (net nx39000z1 
+      (joined 
+       (portRef (member d 2)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_13_ ))))
+     (net nx39997z1 
+      (joined 
+       (portRef (member d 3)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_12_ ))))
+     (net nx40994z1 
+      (joined 
+       (portRef (member d 4)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_11_ ))))
+     (net nx41991z1 
+      (joined 
+       (portRef (member d 5)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_10_ ))))
+     (net nx61105z1 
+      (joined 
+       (portRef (member d 6)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_9_ ))))
+     (net nx60108z1 
+      (joined 
+       (portRef (member d 7)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_8_ ))))
+     (net nx59111z1 
+      (joined 
+       (portRef (member d 8)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_7_ ))))
+     (net nx58114z1 
+      (joined 
+       (portRef (member d 9)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_6_ ))))
+     (net nx57117z1 
+      (joined 
+       (portRef (member d 10)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_5_ ))))
+     (net nx56120z1 
+      (joined 
+       (portRef (member d 11)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_4_ ))))
+     (net nx55123z1 
+      (joined 
+       (portRef (member d 12)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_3_ ))))
+     (net nx54126z1 
+      (joined 
+       (portRef (member d 13)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_2_ ))))
+     (net nx53129z1 
+      (joined 
+       (portRef (member d 14)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_1_ ))))
+     (net nx52132z1 
+      (joined 
+       (portRef (member d 15)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datain (instanceRef Regist_reg_output_0_ ))))
+     (net nx52132z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_0__ix52132z52924 ))
+       (portRef dataa (instanceRef ix52132z52923 ))))
+     (net nx53129z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_1__ix53129z52924 ))
+       (portRef dataa (instanceRef ix53129z52923 ))))
+     (net nx54126z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_2__ix54126z52924 ))
+       (portRef dataa (instanceRef ix54126z52923 ))))
+     (net nx55123z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_3__ix55123z52924 ))
+       (portRef dataa (instanceRef ix55123z52923 ))))
+     (net nx56120z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_4__ix56120z52924 ))
+       (portRef dataa (instanceRef ix56120z52923 ))))
+     (net nx57117z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_5__ix57117z52924 ))
+       (portRef dataa (instanceRef ix57117z52923 ))))
+     (net nx58114z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_6__ix58114z52924 ))
+       (portRef dataa (instanceRef ix58114z52923 ))))
+     (net nx59111z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_7__ix59111z52924 ))
+       (portRef dataa (instanceRef ix59111z52923 ))))
+     (net nx60108z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_8__ix60108z52924 ))
+       (portRef dataa (instanceRef ix60108z52923 ))))
+     (net nx61105z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_9__ix61105z52924 ))
+       (portRef dataa (instanceRef ix61105z52923 ))))
+     (net nx41991z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_10__ix41991z52924 ))
+       (portRef dataa (instanceRef ix41991z52923 ))))
+     (net nx40994z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_11__ix40994z52924 ))
+       (portRef dataa (instanceRef ix40994z52923 ))))
+     (net nx39997z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_12__ix39997z52924 ))
+       (portRef dataa (instanceRef ix39997z52923 ))))
+     (net nx39000z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_13__ix39000z52924 ))
+       (portRef dataa (instanceRef ix39000z52923 ))))
+     (net nx38003z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_14__ix38003z52924 ))
+       (portRef dataa (instanceRef ix38003z52923 ))))
+     (net nx37006z3 
+      (joined 
+       (portRef combout (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_15__ix37006z52924 ))
+       (portRef dataa (instanceRef ix37006z52923 ))))
+     (net mdata_int_15_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_15_ ))
+       (portRef datab (instanceRef ix55923z52923 ))
+       (portRef datab (instanceRef ix37006z52923 ))))
+     (net mdata_int_14_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_14_ ))
+       (portRef datab (instanceRef ix56920z52923 ))
+       (portRef datab (instanceRef ix38003z52923 ))))
+     (net mdata_int_13_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_13_ ))
+       (portRef datab (instanceRef ix57917z52923 ))
+       (portRef datab (instanceRef ix39000z52923 ))))
+     (net mdata_int_12_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_12_ ))
+       (portRef datab (instanceRef ix58914z52923 ))
+       (portRef datab (instanceRef ix39997z52923 ))))
+     (net mdata_int_11_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_11_ ))
+       (portRef datab (instanceRef ix59911z52923 ))
+       (portRef datab (instanceRef ix40994z52923 ))))
+     (net mdata_int_10_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_10_ ))
+       (portRef datab (instanceRef ix60908z52923 ))
+       (portRef datab (instanceRef ix41991z52923 ))))
+     (net mdata_int_9_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_9_ ))
+       (portRef datab (instanceRef ix8368z52923 ))
+       (portRef datab (instanceRef ix61105z52923 ))))
+     (net mdata_int_8_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_8_ ))
+       (portRef datab (instanceRef ix7371z52923 ))
+       (portRef datab (instanceRef ix60108z52923 ))))
+     (net mdata_int_7_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_7_ ))
+       (portRef datab (instanceRef ix6374z52923 ))
+       (portRef datab (instanceRef ix59111z52923 ))))
+     (net mdata_int_6_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_6_ ))
+       (portRef datab (instanceRef ix5377z52923 ))
+       (portRef datab (instanceRef ix58114z52923 ))))
+     (net mdata_int_5_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_5_ ))
+       (portRef datab (instanceRef ix4380z52923 ))
+       (portRef datab (instanceRef ix57117z52923 ))))
+     (net mdata_int_4_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_4_ ))
+       (portRef datab (instanceRef ix3383z52923 ))
+       (portRef datab (instanceRef ix56120z52923 ))))
+     (net mdata_int_3_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_3_ ))
+       (portRef datab (instanceRef ix2386z52923 ))
+       (portRef datab (instanceRef ix55123z52923 ))))
+     (net mdata_int_2_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_2_ ))
+       (portRef datab (instanceRef ix1389z52923 ))
+       (portRef datab (instanceRef ix54126z52923 ))))
+     (net mdata_int_1_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_1_ ))
+       (portRef datab (instanceRef ix392z52923 ))
+       (portRef datab (instanceRef ix53129z52923 ))))
+     (net mdata_int_0_ 
+      (joined 
+       (portRef combout (instanceRef mdata_ibuf_0_ ))
+       (portRef datab (instanceRef ix64931z52923 ))
+       (portRef datab (instanceRef ix52132z52923 ))))
+     (net jaddr_int_15_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_15_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_15__ix37006z52924 ))))
+     (net jaddr_int_14_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_14_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_14__ix38003z52924 ))))
+     (net jaddr_int_13_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_13_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_13__ix39000z52924 ))))
+     (net jaddr_int_12_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_12_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_12__ix39997z52924 ))))
+     (net jaddr_int_11_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_11_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_11__ix40994z52924 ))))
+     (net jaddr_int_10_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_10_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_10__ix41991z52924 ))))
+     (net jaddr_int_9_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_9_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_9__ix61105z52924 ))))
+     (net jaddr_int_8_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_8_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_8__ix60108z52924 ))))
+     (net jaddr_int_7_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_7_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_7__ix59111z52924 ))))
+     (net jaddr_int_6_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_6_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_6__ix58114z52924 ))))
+     (net jaddr_int_5_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_5_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_5__ix57117z52924 ))))
+     (net jaddr_int_4_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_4_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_4__ix56120z52924 ))))
+     (net jaddr_int_3_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_3_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_3__ix55123z52924 ))))
+     (net jaddr_int_2_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_2_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_2__ix54126z52924 ))))
+     (net jaddr_int_1_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_1_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_1__ix53129z52924 ))))
+     (net jaddr_int_0_ 
+      (joined 
+       (portRef combout (instanceRef jaddr_ibuf_0_ ))
+       (portRef datad (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_0__ix52132z52924 ))))
+     (net mdelay_int 
+      (joined 
+       (portRef combout (instanceRef mdelay_ibuf ))
+       (portRef datac (instanceRef ix64931z52923 ))
+       (portRef datac (instanceRef ix392z52923 ))
+       (portRef datac (instanceRef ix1389z52923 ))
+       (portRef datac (instanceRef ix2386z52923 ))
+       (portRef datac (instanceRef ix3383z52923 ))
+       (portRef datac (instanceRef ix4380z52923 ))
+       (portRef datac (instanceRef ix5377z52923 ))
+       (portRef datac (instanceRef ix6374z52923 ))
+       (portRef datac (instanceRef ix7371z52923 ))
+       (portRef datac (instanceRef ix8368z52923 ))
+       (portRef datac (instanceRef ix60908z52923 ))
+       (portRef datac (instanceRef ix59911z52923 ))
+       (portRef datac (instanceRef ix58914z52923 ))
+       (portRef datac (instanceRef ix57917z52923 ))
+       (portRef datac (instanceRef ix56920z52923 ))
+       (portRef datac (instanceRef ix55923z52923 ))
+       (portRef datab (instanceRef ix38003z52926 ))
+       (portRef dataa (instanceRef ix38003z52925 ))))
+     (net stall_int 
+      (joined 
+       (portRef combout (instanceRef stall_ibuf ))
+       (portRef datad (instanceRef ix64931z52923 ))
+       (portRef datad (instanceRef ix392z52923 ))
+       (portRef datad (instanceRef ix1389z52923 ))
+       (portRef datad (instanceRef ix2386z52923 ))
+       (portRef datad (instanceRef ix3383z52923 ))
+       (portRef datad (instanceRef ix4380z52923 ))
+       (portRef datad (instanceRef ix5377z52923 ))
+       (portRef datad (instanceRef ix6374z52923 ))
+       (portRef datad (instanceRef ix7371z52923 ))
+       (portRef datad (instanceRef ix8368z52923 ))
+       (portRef datad (instanceRef ix60908z52923 ))
+       (portRef datad (instanceRef ix59911z52923 ))
+       (portRef datad (instanceRef ix58914z52923 ))
+       (portRef datad (instanceRef ix57917z52923 ))
+       (portRef datad (instanceRef ix56920z52923 ))
+       (portRef datad (instanceRef ix55923z52923 ))
+       (portRef datac (instanceRef ix38003z52926 ))
+       (portRef datab (instanceRef ix38003z52925 ))))
+     (net reset_int 
+      (joined 
+       (portRef combout (instanceRef reset_ibuf ))
+       (portRef p_reset_int (instanceRef Determiner_modgen_inc_19 ))
+       (portRef datab (instanceRef ix55923z52924 ))
+       (portRef datac (instanceRef ix52132z52923 ))
+       (portRef datac (instanceRef ix53129z52923 ))
+       (portRef datac (instanceRef ix54126z52923 ))
+       (portRef datac (instanceRef ix55123z52923 ))
+       (portRef datac (instanceRef ix56120z52923 ))
+       (portRef datac (instanceRef ix57117z52923 ))
+       (portRef datac (instanceRef ix58114z52923 ))
+       (portRef datac (instanceRef ix59111z52923 ))
+       (portRef datac (instanceRef ix60108z52923 ))
+       (portRef datac (instanceRef ix61105z52923 ))
+       (portRef datac (instanceRef ix41991z52923 ))
+       (portRef datac (instanceRef ix40994z52923 ))
+       (portRef datac (instanceRef ix39997z52923 ))
+       (portRef datac (instanceRef ix39000z52923 ))
+       (portRef datac (instanceRef ix38003z52923 ))
+       (portRef datac (instanceRef ix37006z52923 ))
+       (portRef datac (instanceRef ix38003z52925 ))
+       (portRef dataa (instanceRef ix38003z52927 ))
+       (portRef datab (instanceRef ix52132z52925 ))
+       (portRef datab (instanceRef ix60050z52936 ))
+       (portRef datab (instanceRef ix60050z52935 ))
+       (portRef datab (instanceRef ix60050z52934 ))
+       (portRef datab (instanceRef ix60050z52933 ))
+       (portRef datab (instanceRef ix60050z52932 ))
+       (portRef datab (instanceRef ix60050z52931 ))
+       (portRef datab (instanceRef ix60050z52930 ))
+       (portRef datab (instanceRef ix60050z52929 ))
+       (portRef datab (instanceRef ix60050z52928 ))
+       (portRef datab (instanceRef ix60050z52927 ))
+       (portRef datab (instanceRef ix60050z52926 ))
+       (portRef datab (instanceRef ix60050z52925 ))
+       (portRef datab (instanceRef ix60050z52924 ))
+       (portRef datab (instanceRef ix60050z52923 ))
+       (portRef datab (instanceRef ix22506z52923 ))))
+     (net jump_int 
+      (joined 
+       (portRef combout (instanceRef jump_ibuf ))
+       (portRef datac (instanceRef ix55923z52924 ))
+       (portRef datad (instanceRef ix38003z52926 ))))
+     (net int_int 
+      (joined 
+       (portRef combout (instanceRef int_ibuf ))
+       (portRef p_int_int (instanceRef Determiner_modgen_inc_19 ))
+       (portRef datad (instanceRef ix55923z52924 ))
+       (portRef datad (instanceRef ix52132z52923 ))
+       (portRef datad (instanceRef ix53129z52923 ))
+       (portRef datad (instanceRef ix54126z52923 ))
+       (portRef datad (instanceRef ix55123z52923 ))
+       (portRef datad (instanceRef ix56120z52923 ))
+       (portRef datad (instanceRef ix57117z52923 ))
+       (portRef datad (instanceRef ix58114z52923 ))
+       (portRef datad (instanceRef ix59111z52923 ))
+       (portRef datad (instanceRef ix60108z52923 ))
+       (portRef datad (instanceRef ix61105z52923 ))
+       (portRef datad (instanceRef ix41991z52923 ))
+       (portRef datad (instanceRef ix40994z52923 ))
+       (portRef datad (instanceRef ix39997z52923 ))
+       (portRef datad (instanceRef ix39000z52923 ))
+       (portRef datad (instanceRef ix38003z52923 ))
+       (portRef datad (instanceRef ix37006z52923 ))
+       (portRef datad (instanceRef ix38003z52925 ))
+       (portRef datab (instanceRef ix38003z52927 ))
+       (portRef datac (instanceRef ix52132z52925 ))
+       (portRef datac (instanceRef ix60050z52936 ))
+       (portRef datac (instanceRef ix60050z52935 ))
+       (portRef datac (instanceRef ix60050z52934 ))
+       (portRef datac (instanceRef ix60050z52933 ))
+       (portRef datac (instanceRef ix60050z52932 ))
+       (portRef datac (instanceRef ix60050z52931 ))
+       (portRef datac (instanceRef ix60050z52930 ))
+       (portRef datac (instanceRef ix60050z52929 ))
+       (portRef datac (instanceRef ix60050z52928 ))
+       (portRef datac (instanceRef ix60050z52927 ))
+       (portRef datac (instanceRef ix60050z52926 ))
+       (portRef datac (instanceRef ix60050z52925 ))
+       (portRef datac (instanceRef ix60050z52924 ))
+       (portRef datac (instanceRef ix60050z52923 ))
+       (portRef datac (instanceRef ix22506z52923 ))))
+     (net clock_int 
+      (joined 
+       (portRef combout (instanceRef clock_ibuf ))
+       (portRef clk (instanceRef Regist_reg_output_9_ ))
+       (portRef clk (instanceRef Regist_reg_output_8_ ))
+       (portRef clk (instanceRef Regist_reg_output_7_ ))
+       (portRef clk (instanceRef Regist_reg_output_6_ ))
+       (portRef clk (instanceRef Regist_reg_output_5_ ))
+       (portRef clk (instanceRef Regist_reg_output_4_ ))
+       (portRef clk (instanceRef Regist_reg_output_3_ ))
+       (portRef clk (instanceRef Regist_reg_output_2_ ))
+       (portRef clk (instanceRef Regist_reg_output_15_ ))
+       (portRef clk (instanceRef Regist_reg_output_14_ ))
+       (portRef clk (instanceRef Regist_reg_output_13_ ))
+       (portRef clk (instanceRef Regist_reg_output_12_ ))
+       (portRef clk (instanceRef Regist_reg_output_11_ ))
+       (portRef clk (instanceRef Regist_reg_output_10_ ))
+       (portRef clk (instanceRef Regist_reg_output_1_ ))
+       (portRef clk (instanceRef Regist_reg_output_0_ ))))
+     (net maddr_15_ 
+      (joined 
+       (portRef (member maddr 0))
+       (portRef padio (instanceRef maddr_obuf_15_ ))))
+     (net maddr_14_ 
+      (joined 
+       (portRef (member maddr 1))
+       (portRef padio (instanceRef maddr_obuf_14_ ))))
+     (net maddr_13_ 
+      (joined 
+       (portRef (member maddr 2))
+       (portRef padio (instanceRef maddr_obuf_13_ ))))
+     (net maddr_12_ 
+      (joined 
+       (portRef (member maddr 3))
+       (portRef padio (instanceRef maddr_obuf_12_ ))))
+     (net maddr_11_ 
+      (joined 
+       (portRef (member maddr 4))
+       (portRef padio (instanceRef maddr_obuf_11_ ))))
+     (net maddr_10_ 
+      (joined 
+       (portRef (member maddr 5))
+       (portRef padio (instanceRef maddr_obuf_10_ ))))
+     (net maddr_9_ 
+      (joined 
+       (portRef (member maddr 6))
+       (portRef padio (instanceRef maddr_obuf_9_ ))))
+     (net maddr_8_ 
+      (joined 
+       (portRef (member maddr 7))
+       (portRef padio (instanceRef maddr_obuf_8_ ))))
+     (net maddr_7_ 
+      (joined 
+       (portRef (member maddr 8))
+       (portRef padio (instanceRef maddr_obuf_7_ ))))
+     (net maddr_6_ 
+      (joined 
+       (portRef (member maddr 9))
+       (portRef padio (instanceRef maddr_obuf_6_ ))))
+     (net maddr_5_ 
+      (joined 
+       (portRef (member maddr 10))
+       (portRef padio (instanceRef maddr_obuf_5_ ))))
+     (net maddr_4_ 
+      (joined 
+       (portRef (member maddr 11))
+       (portRef padio (instanceRef maddr_obuf_4_ ))))
+     (net maddr_3_ 
+      (joined 
+       (portRef (member maddr 12))
+       (portRef padio (instanceRef maddr_obuf_3_ ))))
+     (net maddr_2_ 
+      (joined 
+       (portRef (member maddr 13))
+       (portRef padio (instanceRef maddr_obuf_2_ ))))
+     (net maddr_1_ 
+      (joined 
+       (portRef (member maddr 14))
+       (portRef padio (instanceRef maddr_obuf_1_ ))))
+     (net maddr_0_ 
+      (joined 
+       (portRef (member maddr 15))
+       (portRef padio (instanceRef maddr_obuf_0_ ))))
+     (net inst_15_ 
+      (joined 
+       (portRef (member inst 0))
+       (portRef padio (instanceRef inst_obuf_15_ ))))
+     (net inst_14_ 
+      (joined 
+       (portRef (member inst 1))
+       (portRef padio (instanceRef inst_obuf_14_ ))))
+     (net inst_13_ 
+      (joined 
+       (portRef (member inst 2))
+       (portRef padio (instanceRef inst_obuf_13_ ))))
+     (net inst_12_ 
+      (joined 
+       (portRef (member inst 3))
+       (portRef padio (instanceRef inst_obuf_12_ ))))
+     (net inst_11_ 
+      (joined 
+       (portRef (member inst 4))
+       (portRef padio (instanceRef inst_obuf_11_ ))))
+     (net inst_10_ 
+      (joined 
+       (portRef (member inst 5))
+       (portRef padio (instanceRef inst_obuf_10_ ))))
+     (net inst_9_ 
+      (joined 
+       (portRef (member inst 6))
+       (portRef padio (instanceRef inst_obuf_9_ ))))
+     (net inst_8_ 
+      (joined 
+       (portRef (member inst 7))
+       (portRef padio (instanceRef inst_obuf_8_ ))))
+     (net inst_7_ 
+      (joined 
+       (portRef (member inst 8))
+       (portRef padio (instanceRef inst_obuf_7_ ))))
+     (net inst_6_ 
+      (joined 
+       (portRef (member inst 9))
+       (portRef padio (instanceRef inst_obuf_6_ ))))
+     (net inst_5_ 
+      (joined 
+       (portRef (member inst 10))
+       (portRef padio (instanceRef inst_obuf_5_ ))))
+     (net inst_4_ 
+      (joined 
+       (portRef (member inst 11))
+       (portRef padio (instanceRef inst_obuf_4_ ))))
+     (net inst_3_ 
+      (joined 
+       (portRef (member inst 12))
+       (portRef padio (instanceRef inst_obuf_3_ ))))
+     (net inst_2_ 
+      (joined 
+       (portRef (member inst 13))
+       (portRef padio (instanceRef inst_obuf_2_ ))))
+     (net inst_1_ 
+      (joined 
+       (portRef (member inst 14))
+       (portRef padio (instanceRef inst_obuf_1_ ))))
+     (net inst_0_ 
+      (joined 
+       (portRef (member inst 15))
+       (portRef padio (instanceRef inst_obuf_0_ ))))
+     (net pcval_15_ 
+      (joined 
+       (portRef (member pcval 0))
+       (portRef padio (instanceRef pcval_obuf_15_ ))))
+     (net pcval_14_ 
+      (joined 
+       (portRef (member pcval 1))
+       (portRef padio (instanceRef pcval_obuf_14_ ))))
+     (net pcval_13_ 
+      (joined 
+       (portRef (member pcval 2))
+       (portRef padio (instanceRef pcval_obuf_13_ ))))
+     (net pcval_12_ 
+      (joined 
+       (portRef (member pcval 3))
+       (portRef padio (instanceRef pcval_obuf_12_ ))))
+     (net pcval_11_ 
+      (joined 
+       (portRef (member pcval 4))
+       (portRef padio (instanceRef pcval_obuf_11_ ))))
+     (net pcval_10_ 
+      (joined 
+       (portRef (member pcval 5))
+       (portRef padio (instanceRef pcval_obuf_10_ ))))
+     (net pcval_9_ 
+      (joined 
+       (portRef (member pcval 6))
+       (portRef padio (instanceRef pcval_obuf_9_ ))))
+     (net pcval_8_ 
+      (joined 
+       (portRef (member pcval 7))
+       (portRef padio (instanceRef pcval_obuf_8_ ))))
+     (net pcval_7_ 
+      (joined 
+       (portRef (member pcval 8))
+       (portRef padio (instanceRef pcval_obuf_7_ ))))
+     (net pcval_6_ 
+      (joined 
+       (portRef (member pcval 9))
+       (portRef padio (instanceRef pcval_obuf_6_ ))))
+     (net pcval_5_ 
+      (joined 
+       (portRef (member pcval 10))
+       (portRef padio (instanceRef pcval_obuf_5_ ))))
+     (net pcval_4_ 
+      (joined 
+       (portRef (member pcval 11))
+       (portRef padio (instanceRef pcval_obuf_4_ ))))
+     (net pcval_3_ 
+      (joined 
+       (portRef (member pcval 12))
+       (portRef padio (instanceRef pcval_obuf_3_ ))))
+     (net pcval_2_ 
+      (joined 
+       (portRef (member pcval 13))
+       (portRef padio (instanceRef pcval_obuf_2_ ))))
+     (net pcval_1_ 
+      (joined 
+       (portRef (member pcval 14))
+       (portRef padio (instanceRef pcval_obuf_1_ ))))
+     (net pcval_0_ 
+      (joined 
+       (portRef (member pcval 15))
+       (portRef padio (instanceRef pcval_obuf_0_ ))))
+     (net inst_dup_0_15_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_15_ ))
+       (portRef datain (instanceRef inst_obuf_15_ ))))
+     (net inst_dup_0_14_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_14_ ))
+       (portRef datain (instanceRef inst_obuf_14_ ))))
+     (net inst_dup_0_13_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_13_ ))
+       (portRef datain (instanceRef inst_obuf_13_ ))))
+     (net inst_dup_0_12_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_12_ ))
+       (portRef datain (instanceRef inst_obuf_12_ ))))
+     (net inst_dup_0_11_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_11_ ))
+       (portRef datain (instanceRef inst_obuf_11_ ))))
+     (net inst_dup_0_10_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_10_ ))
+       (portRef datain (instanceRef inst_obuf_10_ ))))
+     (net inst_dup_0_9_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_9_ ))
+       (portRef datain (instanceRef inst_obuf_9_ ))))
+     (net inst_dup_0_8_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_8_ ))
+       (portRef datain (instanceRef inst_obuf_8_ ))))
+     (net inst_dup_0_7_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_7_ ))
+       (portRef datain (instanceRef inst_obuf_7_ ))))
+     (net inst_dup_0_6_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_6_ ))
+       (portRef datain (instanceRef inst_obuf_6_ ))))
+     (net inst_dup_0_5_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_5_ ))
+       (portRef datain (instanceRef inst_obuf_5_ ))))
+     (net inst_dup_0_4_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_4_ ))
+       (portRef datain (instanceRef inst_obuf_4_ ))))
+     (net inst_dup_0_3_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_3_ ))
+       (portRef datain (instanceRef inst_obuf_3_ ))))
+     (net inst_dup_0_2_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_2_ ))
+       (portRef datain (instanceRef inst_obuf_2_ ))))
+     (net inst_dup_0_1_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_1_ ))
+       (portRef datain (instanceRef inst_obuf_1_ ))))
+     (net inst_dup_0_0_ 
+      (joined 
+       (portRef q (instanceRef Determiner_lat_instr_0_ ))
+       (portRef datain (instanceRef inst_obuf_0_ ))))
+     (net maddr_dup_0_15_ 
+      (joined 
+       (portRef combout (instanceRef ix22506z52923 ))
+       (portRef (member a 0)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_15__ix37006z52924 ))
+       (portRef datain (instanceRef pcval_obuf_15_ ))
+       (portRef datain (instanceRef maddr_obuf_15_ ))))
+     (net maddr_dup_0_14_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52923 ))
+       (portRef (member a 1)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_14__ix38003z52924 ))
+       (portRef datain (instanceRef pcval_obuf_14_ ))
+       (portRef datain (instanceRef maddr_obuf_14_ ))))
+     (net maddr_dup_0_13_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52924 ))
+       (portRef (member a 2)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_13__ix39000z52924 ))
+       (portRef datain (instanceRef pcval_obuf_13_ ))
+       (portRef datain (instanceRef maddr_obuf_13_ ))))
+     (net maddr_dup_0_12_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52925 ))
+       (portRef (member a 3)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_12__ix39997z52924 ))
+       (portRef datain (instanceRef pcval_obuf_12_ ))
+       (portRef datain (instanceRef maddr_obuf_12_ ))))
+     (net maddr_dup_0_11_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52926 ))
+       (portRef (member a 4)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_11__ix40994z52924 ))
+       (portRef datain (instanceRef pcval_obuf_11_ ))
+       (portRef datain (instanceRef maddr_obuf_11_ ))))
+     (net maddr_dup_0_10_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52927 ))
+       (portRef (member a 5)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_10__ix41991z52924 ))
+       (portRef datain (instanceRef pcval_obuf_10_ ))
+       (portRef datain (instanceRef maddr_obuf_10_ ))))
+     (net maddr_dup_0_9_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52928 ))
+       (portRef (member a 6)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_9__ix61105z52924 ))
+       (portRef datain (instanceRef pcval_obuf_9_ ))
+       (portRef datain (instanceRef maddr_obuf_9_ ))))
+     (net maddr_dup_0_8_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52929 ))
+       (portRef (member a 7)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_8__ix60108z52924 ))
+       (portRef datain (instanceRef pcval_obuf_8_ ))
+       (portRef datain (instanceRef maddr_obuf_8_ ))))
+     (net maddr_dup_0_7_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52930 ))
+       (portRef (member a 8)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_7__ix59111z52924 ))
+       (portRef datain (instanceRef pcval_obuf_7_ ))
+       (portRef datain (instanceRef maddr_obuf_7_ ))))
+     (net maddr_dup_0_6_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52931 ))
+       (portRef (member a 9)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_6__ix58114z52924 ))
+       (portRef datain (instanceRef pcval_obuf_6_ ))
+       (portRef datain (instanceRef maddr_obuf_6_ ))))
+     (net maddr_dup_0_5_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52932 ))
+       (portRef (member a 10)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_5__ix57117z52924 ))
+       (portRef datain (instanceRef pcval_obuf_5_ ))
+       (portRef datain (instanceRef maddr_obuf_5_ ))))
+     (net maddr_dup_0_4_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52933 ))
+       (portRef (member a 11)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_4__ix56120z52924 ))
+       (portRef datain (instanceRef pcval_obuf_4_ ))
+       (portRef datain (instanceRef maddr_obuf_4_ ))))
+     (net maddr_dup_0_3_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52934 ))
+       (portRef (member a 12)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_3__ix55123z52924 ))
+       (portRef datain (instanceRef pcval_obuf_3_ ))
+       (portRef datain (instanceRef maddr_obuf_3_ ))))
+     (net maddr_dup_0_2_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52935 ))
+       (portRef (member a 13)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_2__ix54126z52924 ))
+       (portRef datain (instanceRef pcval_obuf_2_ ))
+       (portRef datain (instanceRef maddr_obuf_2_ ))))
+     (net maddr_dup_0_1_ 
+      (joined 
+       (portRef combout (instanceRef ix60050z52936 ))
+       (portRef (member a 14)(instanceRef Determiner_modgen_inc_19 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_1__ix53129z52924 ))
+       (portRef datain (instanceRef pcval_obuf_1_ ))
+       (portRef datain (instanceRef maddr_obuf_1_ ))))
+     (net maddr_dup_0_0_ 
+      (joined 
+       (portRef combout (instanceRef ix52132z52925 ))
+       (portRef datac (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_0__ix52132z52924 ))
+       (portRef datain (instanceRef pcval_obuf_0_ ))
+       (portRef datain (instanceRef maddr_obuf_0_ ))))
+     (net PWR 
+      (joined 
+       (portRef Y (instanceRef PWR ))
+       (portRef ena (instanceRef Regist_reg_output_9_ ))
+       (portRef ena (instanceRef Regist_reg_output_8_ ))
+       (portRef ena (instanceRef Regist_reg_output_7_ ))
+       (portRef ena (instanceRef Regist_reg_output_6_ ))
+       (portRef ena (instanceRef Regist_reg_output_5_ ))
+       (portRef ena (instanceRef Regist_reg_output_4_ ))
+       (portRef ena (instanceRef Regist_reg_output_3_ ))
+       (portRef ena (instanceRef Regist_reg_output_2_ ))
+       (portRef ena (instanceRef Regist_reg_output_15_ ))
+       (portRef ena (instanceRef Regist_reg_output_14_ ))
+       (portRef ena (instanceRef Regist_reg_output_13_ ))
+       (portRef ena (instanceRef Regist_reg_output_12_ ))
+       (portRef ena (instanceRef Regist_reg_output_11_ ))
+       (portRef ena (instanceRef Regist_reg_output_10_ ))
+       (portRef ena (instanceRef Regist_reg_output_1_ ))
+       (portRef ena (instanceRef Regist_reg_output_0_ ))))
+     (net nx38003z6 
+      (joined 
+       (portRef combout (instanceRef ix38003z52927 ))
+       (portRef dataa (instanceRef ix64931z52923 ))
+       (portRef dataa (instanceRef ix392z52923 ))
+       (portRef dataa (instanceRef ix1389z52923 ))
+       (portRef dataa (instanceRef ix2386z52923 ))
+       (portRef dataa (instanceRef ix3383z52923 ))
+       (portRef dataa (instanceRef ix4380z52923 ))
+       (portRef dataa (instanceRef ix5377z52923 ))
+       (portRef dataa (instanceRef ix6374z52923 ))
+       (portRef dataa (instanceRef ix7371z52923 ))
+       (portRef dataa (instanceRef ix8368z52923 ))
+       (portRef dataa (instanceRef ix60908z52923 ))
+       (portRef dataa (instanceRef ix59911z52923 ))
+       (portRef dataa (instanceRef ix58914z52923 ))
+       (portRef dataa (instanceRef ix57917z52923 ))
+       (portRef dataa (instanceRef ix56920z52923 ))
+       (portRef dataa (instanceRef ix55923z52923 ))
+       (portRef dataa (instanceRef ix38003z52926 ))))
+     (net nx38003z4 
+      (joined 
+       (portRef combout (instanceRef ix38003z52925 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_9__ix61105z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_8__ix60108z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_7__ix59111z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_6__ix58114z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_5__ix57117z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_4__ix56120z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_3__ix55123z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_2__ix54126z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_15__ix37006z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_14__ix38003z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_13__ix39000z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_12__ix39997z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_11__ix40994z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_10__ix41991z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_1__ix53129z52924 ))
+       (portRef datab (instanceRef prec_sel2mux_Determiner_rtlcn0_selectBus2_0__ix52132z52924 ))
+       (portRef dataa (instanceRef ix55923z52924 ))))
+     (net nx37006z2 
+      (joined 
+       (portRef combout (instanceRef ix37006z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_15_ ))))
+     (net nx38003z2 
+      (joined 
+       (portRef combout (instanceRef ix38003z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_14_ ))))
+     (net nx39000z2 
+      (joined 
+       (portRef combout (instanceRef ix39000z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_13_ ))))
+     (net nx39997z2 
+      (joined 
+       (portRef combout (instanceRef ix39997z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_12_ ))))
+     (net nx40994z2 
+      (joined 
+       (portRef combout (instanceRef ix40994z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_11_ ))))
+     (net nx41991z2 
+      (joined 
+       (portRef combout (instanceRef ix41991z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_10_ ))))
+     (net nx61105z2 
+      (joined 
+       (portRef combout (instanceRef ix61105z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_9_ ))))
+     (net nx60108z2 
+      (joined 
+       (portRef combout (instanceRef ix60108z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_8_ ))))
+     (net nx59111z2 
+      (joined 
+       (portRef combout (instanceRef ix59111z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_7_ ))))
+     (net nx58114z2 
+      (joined 
+       (portRef combout (instanceRef ix58114z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_6_ ))))
+     (net nx57117z2 
+      (joined 
+       (portRef combout (instanceRef ix57117z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_5_ ))))
+     (net nx56120z2 
+      (joined 
+       (portRef combout (instanceRef ix56120z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_4_ ))))
+     (net nx55123z2 
+      (joined 
+       (portRef combout (instanceRef ix55123z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_3_ ))))
+     (net nx54126z2 
+      (joined 
+       (portRef combout (instanceRef ix54126z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_2_ ))))
+     (net nx53129z2 
+      (joined 
+       (portRef combout (instanceRef ix53129z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_1_ ))))
+     (net nx52132z2 
+      (joined 
+       (portRef combout (instanceRef ix52132z52923 ))
+       (portRef sdata (instanceRef Regist_reg_output_0_ ))))
+     (net nx38003z5 
+      (joined 
+       (portRef combout (instanceRef ix38003z52926 ))
+       (portRef sload (instanceRef Regist_reg_output_9_ ))
+       (portRef sload (instanceRef Regist_reg_output_8_ ))
+       (portRef sload (instanceRef Regist_reg_output_7_ ))
+       (portRef sload (instanceRef Regist_reg_output_6_ ))
+       (portRef sload (instanceRef Regist_reg_output_5_ ))
+       (portRef sload (instanceRef Regist_reg_output_4_ ))
+       (portRef sload (instanceRef Regist_reg_output_3_ ))
+       (portRef sload (instanceRef Regist_reg_output_2_ ))
+       (portRef sload (instanceRef Regist_reg_output_15_ ))
+       (portRef sload (instanceRef Regist_reg_output_14_ ))
+       (portRef sload (instanceRef Regist_reg_output_13_ ))
+       (portRef sload (instanceRef Regist_reg_output_12_ ))
+       (portRef sload (instanceRef Regist_reg_output_11_ ))
+       (portRef sload (instanceRef Regist_reg_output_10_ ))
+       (portRef sload (instanceRef Regist_reg_output_1_ ))
+       (portRef sload (instanceRef Regist_reg_output_0_ ))))
+     (net nx55923z1 
+      (joined 
+       (portRef combout (instanceRef ix55923z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_15_ ))))
+     (net nx56920z1 
+      (joined 
+       (portRef combout (instanceRef ix56920z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_14_ ))))
+     (net nx57917z1 
+      (joined 
+       (portRef combout (instanceRef ix57917z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_13_ ))))
+     (net nx58914z1 
+      (joined 
+       (portRef combout (instanceRef ix58914z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_12_ ))))
+     (net nx59911z1 
+      (joined 
+       (portRef combout (instanceRef ix59911z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_11_ ))))
+     (net nx60908z1 
+      (joined 
+       (portRef combout (instanceRef ix60908z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_10_ ))))
+     (net nx8368z1 
+      (joined 
+       (portRef combout (instanceRef ix8368z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_9_ ))))
+     (net nx7371z1 
+      (joined 
+       (portRef combout (instanceRef ix7371z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_8_ ))))
+     (net nx6374z1 
+      (joined 
+       (portRef combout (instanceRef ix6374z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_7_ ))))
+     (net nx5377z1 
+      (joined 
+       (portRef combout (instanceRef ix5377z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_6_ ))))
+     (net nx4380z1 
+      (joined 
+       (portRef combout (instanceRef ix4380z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_5_ ))))
+     (net nx3383z1 
+      (joined 
+       (portRef combout (instanceRef ix3383z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_4_ ))))
+     (net nx2386z1 
+      (joined 
+       (portRef combout (instanceRef ix2386z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_3_ ))))
+     (net nx1389z1 
+      (joined 
+       (portRef combout (instanceRef ix1389z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_2_ ))))
+     (net nx392z1 
+      (joined 
+       (portRef combout (instanceRef ix392z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_1_ ))))
+     (net nx64931z1 
+      (joined 
+       (portRef combout (instanceRef ix64931z52923 ))
+       (portRef d (instanceRef Determiner_lat_instr_0_ ))))
+     (net nx55923z2 
+      (joined 
+       (portRef combout (instanceRef ix55923z52924 ))
+       (portRef ena (instanceRef Determiner_lat_instr_15_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_14_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_13_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_12_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_11_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_10_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_9_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_8_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_7_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_6_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_5_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_4_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_3_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_2_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_1_ ))
+       (portRef ena (instanceRef Determiner_lat_instr_0_ ))))))))
+ (design Fetch_Stage (cellRef Fetch_Stage (libraryRef modic_pipeline_lib ))))

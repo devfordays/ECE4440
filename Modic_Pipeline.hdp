@@ -1,0 +1,18 @@
+[ModelSim]
+Modic_Pipeline_lib = $HDS_PROJECT_DIR\Modic_Pipeline_lib\work
+[Precision]
+Modic_Pipeline_lib = $HDS_PROJECT_DIR\Modic_Pipeline_lib\ps
+[hdl]
+Modic_Pipeline_lib = $HDS_PROJECT_DIR\Modic_Pipeline_lib\hdl
+[hds]
+Modic_Pipeline_lib = $HDS_PROJECT_DIR\Modic_Pipeline_lib\hds
+[hds_settings]
+default_library = Modic_Pipeline_lib
+project_description = Modic_Pipeline
+version = 2
+[library_files_inclusion]
+Modic_Pipeline_lib = specify
+[library_type]
+Modic_Pipeline_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

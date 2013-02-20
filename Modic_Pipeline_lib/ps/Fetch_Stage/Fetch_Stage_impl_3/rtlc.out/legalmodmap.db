@@ -1,0 +1,8 @@
+Fetch_Stage Fetch_Stage
+Fetch_Mem_MUX Fetch_Mem_MUX
+Fetch_PC_MUX Fetch_PC_MUX
+Reg-16 Reg_16
+Fetch_PCVal_MUX Fetch_PCVal_MUX
+Fetch_Instr_MUX Fetch_Instr_MUX
+Fetch_Incrementer Fetch_Incrementer
+#LEGALIZEDMOD_COUNTER 0

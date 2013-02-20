@@ -1,0 +1,10 @@
+8:-out_dir
+120:C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Five_Stage_Pipeline/Five_Stage_Pipeline_impl_1//rtlc.out
+10:-pipe_flow
+4:-vhf
+131:C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Five_Stage_Pipeline/Five_Stage_Pipeline_impl_1//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+120:C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Five_Stage_Pipeline/Five_Stage_Pipeline_impl_1//.jaguarc
+156:+incdir+C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl+C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Five_Stage_Pipeline
+17:+define+synthesis

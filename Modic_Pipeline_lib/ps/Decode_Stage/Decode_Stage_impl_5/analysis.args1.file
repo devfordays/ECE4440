@@ -1,0 +1,10 @@
+8:-out_dir
+128:C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage/Decode_Stage_impl_5//rtlc.out
+10:-pipe_flow
+4:-vhf
+139:C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage/Decode_Stage_impl_5//hdlAnalyze_vhdlfile
+25:-comment_transoff_regions
+13:-lib_map_file
+128:C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage/Decode_Stage_impl_5//.jaguarc
+391:+incdir+C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl+C:/Users/Owner/Desktop/Past+C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage/Classes/ECE+C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage/4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/ps/Decode_Stage
+17:+define+synthesis

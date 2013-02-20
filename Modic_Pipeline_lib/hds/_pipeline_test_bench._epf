@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Pipeline_test_bench
+DEFAULT_FILE atom Pipeline_test_bench_Pipeline_test_bench.vhd

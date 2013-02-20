@@ -1,0 +1,7 @@
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Controller_Decode_Controller.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Dest_MUX_Decode_Dest_MUX.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Extra_MUX_Decode_Extra_MUX.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Left_MUX_Decode_Left_MUX.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_MultSig_Decode_MultSig.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Right_MUX_Decode_Right_MUX.vhd" -2002 
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Stage_Decode_Stage.vhd" -2002 

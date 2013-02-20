@@ -1,0 +1,7 @@
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Incrementer_Fetch_Incrementer.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Instr_MUX_Fetch_Instr_MUX.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Mem_MUX_Fetch_Mem_MUX.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_PC_MUX_Fetch_PC_MUX.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Reg_Reg.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_PCVal_MUX_Fetch_PCVal_MUX.vhd" -2002
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Stage_Fetch_Stage.vhd" -2002

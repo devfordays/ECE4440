@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Fetch_Mem_MUX
+DEFAULT_FILE atom Fetch_Mem_MUX_Fetch_Mem_MUX.vhd

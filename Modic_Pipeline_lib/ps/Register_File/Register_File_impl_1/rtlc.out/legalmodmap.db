@@ -1,0 +1,5 @@
+Register_File_four_sixteen_MUX Register_File_four_sixteen_MUX
+Reg-16 Reg_16
+Register_File Register_File
+Register_File_TriState-16 Register_File_TriState_16
+#LEGALIZEDMOD_COUNTER 0

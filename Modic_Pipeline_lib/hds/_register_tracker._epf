@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Register_Tracker
+DEFAULT_FILE atom Register_Tracker_Register_Tracker.vhd

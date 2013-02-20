@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Fetch_Incrementer
+DEFAULT_FILE atom Fetch_Incrementer_Fetch_Incrementer.vhd

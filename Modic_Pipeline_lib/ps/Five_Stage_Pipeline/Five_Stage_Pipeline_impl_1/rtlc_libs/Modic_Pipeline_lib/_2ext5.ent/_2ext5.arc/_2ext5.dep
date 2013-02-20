@@ -1,0 +1,36 @@
+1353868167.094000
+*319938677
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	FIVE_STAGE_PIPELINE	FIVE_STAGE_PIPELINE	0	2869395631
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	FETCH_STAGE	FETCH_STAGE	0	2732072682
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	FETCH_STAGE	FETCH_STAGE	1	1362185828
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	DECODE_STAGE	DECODE_STAGE	0	2132713289
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	DECODE_STAGE	DECODE_STAGE	1	2625837442
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	EXECUTE_STAGE	EXECUTE_STAGE	0	3216724601
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	EXECUTE_STAGE	EXECUTE_STAGE	1	2448178435
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	MEM_STAGE	MEM_STAGE	0	3797482953
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	MEM_STAGE	MEM_STAGE	1	3693357044
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	WB_STAGE	WB_STAGE	0	3679724917
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	WB_STAGE	WB_STAGE	1	3679619754
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	SRAM	SRAM	0	1540806190
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_UNSIGNED	STD_LOGIC_UNSIGNED	2	0
+std	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\STD	TEXTIO	TEXTIO	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	BEHAVIOR	SRAM	1	3175475141
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	REGISTER_TRACKER	REGISTER_TRACKER	0	3711338655
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	REGISTER_TRACKER	REGISTER_TRACKER	1	2082244193
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	REGISTER_FILE	REGISTER_FILE	0	3249433637
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	C:\PROGRA~1\MENTOR~1\PRECIS~1.10\Mgc_home\pkgs\rtlc_psr\rtlc\IEEE	STD_LOGIC_ARITH	STD_LOGIC_ARITH	2	0
+Modic_Pipeline_lib	C:\Users\Owner\Desktop\HDS\Modic_Pipeline\Modic_Pipeline_lib\ps\Five_Stage_Pipeline\Five_Stage_Pipeline_impl_1\rtlc_libs\Modic_Pipeline_lib	REGISTER_FILE	REGISTER_FILE	1	3903454848

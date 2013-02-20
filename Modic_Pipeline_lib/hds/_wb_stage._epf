@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom WB_Stage
+DEFAULT_FILE atom WB_Stage_WB_Stage.vhd

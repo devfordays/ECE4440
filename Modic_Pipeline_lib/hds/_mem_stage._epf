@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Mem_Stage
+DEFAULT_FILE atom Mem_Stage_Mem_Stage.vhd

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Five_Stage_Pipeline
+DEFAULT_FILE atom Five_Stage_Pipeline_Five_Stage_Pipeline.vhd

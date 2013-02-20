@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Decode_Extra_MUX
+DEFAULT_FILE atom Decode_Extra_MUX_Decode_Extra_MUX.vhd

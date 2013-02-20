@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Execute_ALU
+DEFAULT_FILE atom Execute_ALU_Execute_ALU.vhd

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Decode_Left_MUX
+DEFAULT_FILE atom Decode_Left_MUX_Decode_Left_MUX.vhd

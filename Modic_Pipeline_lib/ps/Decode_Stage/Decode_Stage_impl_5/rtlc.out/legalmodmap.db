@@ -1,0 +1,8 @@
+Decode_MultSig Decode_MultSig
+Decode_Stage Decode_Stage
+Decode_Extra_MUX Decode_Extra_MUX
+Decode_Right_MUX Decode_Right_MUX
+Decode_Left_MUX Decode_Left_MUX
+Decode_Controller Decode_Controller
+Decode_Dest_MUX Decode_Dest_MUX
+#LEGALIZEDMOD_COUNTER 0

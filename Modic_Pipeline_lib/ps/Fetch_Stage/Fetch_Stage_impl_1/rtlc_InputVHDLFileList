@@ -1,0 +1,5 @@
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/CLU_CLU.vhd" -2008
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Multiplex_Multiplex.vhd" -2008
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/MultiInt_MultiInt.vhd" -2008
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Reg_Reg.vhd" -2008
+Modic_Pipeline_lib "C:/Users/Owner/Desktop/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Fetch_Stage_Fetch_Stage.vhd" -2008

@@ -1,0 +1,951 @@
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L Modic_Pipeline_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll"} Modic_Pipeline_lib.Pipeline_test_bench(Pipeline_test_bench) 
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.pipeline_test_bench(pipeline_test_bench)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.five_stage_pipeline(five_stage_pipeline)#1
+# Loading work.fetch_stage(fetch_stage)#1
+# Loading work.fetch_mem_mux(fetch_mem_mux)#1
+# Loading work.fetch_instr_mux(fetch_instr_mux)#1
+# Loading work.fetch_pcval_mux(fetch_pcval_mux)#1
+# Loading work.fetch_incrementer(fetch_incrementer)#1
+# Loading work.fetch_pc_mux(fetch_pc_mux)#1
+# Loading work.reg(reg)#1
+# Loading work.decode_stage(decode_stage)#1
+# Loading work.decode_controller(decode_controller)#1
+# Loading work.decode_multsig(decode_multsig)#1
+# Loading work.decode_left_mux(decode_left_mux)#1
+# Loading work.decode_right_mux(decode_right_mux)#1
+# Loading work.decode_extra_mux(decode_extra_mux)#1
+# Loading work.decode_dest_mux(decode_dest_mux)#1
+# Loading work.execute_stage(execute_stage)#1
+# Loading work.execute_stage_changenames(execute_stage_changenames)#1
+# Loading work.execute_stage_changenames(execute_stage_changenames)#2
+# Loading work.reg(reg)#2
+# Loading work.execute_stage_changenames(execute_stage_changenames)#3
+# Loading work.execute_alu(execute_alu)#1
+# Loading work.execute_jumpunit(execute_jumpunit)#1
+# Loading work.mem_stage(mem_stage)#1
+# Loading work.mem_multiplexor(mem_multiplexor)#1
+# Loading work.mem_multi16(mem_multi16)#1
+# Loading work.mem_multi18(mem_multi18)#1
+# Loading work.mem_new_mux(mem_new_mux)#1
+# Loading work.mem_multi1(mem_multi1)#1
+# Loading work.wb_stage(wb_stage)#1
+# Loading work.easy_ram_simu(behavior)#1
+# Loading work.register_tracker(register_tracker)#1
+# Loading work.register_tracker_control_mux(register_tracker_control_mux)#1
+# Loading work.register_tracker_control_or(register_tracker_control_or)#1
+# Loading work.reg(reg)#3
+# Loading work.register_tracker_control_logic(register_tracker_control_logic)#1
+# Loading work.register_file(register_file)#1
+# Loading work.register_file_four_sixteen_mux(register_file_four_sixteen_mux)#1
+# Loading work.register_file_tristate(register_file_tristate)#1
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 11  Instance: /pipeline_test_bench/dut/MemStageMemory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 700 ns  Iteration: 11  Instance: /pipeline_test_bench/dut/MemStageMemory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+restart
+# Loading C:/MentorGraphics/HDS_2012.1/resources/downstream/modelsim/ModelSim_64Bit.dll
+add wave -r /*
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 11  Instance: /pipeline_test_bench/dut/MemStageMemory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 700 ns  Iteration: 11  Instance: /pipeline_test_bench/dut/MemStageMemory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11700 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12100 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13300 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14900 ns  Iteration: 8  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16100 ns  Iteration: 7  Instance: /pipeline_test_bench/dut/Execute/ALUunit
+# 0
+# 

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Fetch_PCVal_MUX
+DEFAULT_FILE atom Fetch_PCVal_MUX_Fetch_PCVal_MUX.vhd

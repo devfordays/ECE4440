@@ -1,0 +1,45 @@
+//  Precision RTL Synthesis 2012a.10 (Production Release) Fri Jun 15 08:14:11 PDT 2012
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2012, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Windows 7 Owner@OWNER-PC  6.01.7600 x86
+//  
+//  Start time Tue Feb 12 21:51:36 2013
+
+***************************************************************
+Device Utilization for EP2C70F896I
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               160     606      26.40%
+LUTs                              105     68416     0.15%
+Registers                         0       68416     0.00%
+Memory Bits                       0       1152000   0.00%
+DSP block 9-bit elems             0       300       0.00%
+---------------------------------------------------------------
+
+*****************************************************************
+
+Library: modic_pipeline_lib    Cell: Mem_Stage    View: Mem_Stage
+
+*****************************************************************
+
+  Cell                   Library  References     Total Area
+
+ cycloneii_io            cycloneii   159 x      1    159 IOs
+ cycloneii_lcell_comb    cycloneii    51 x      1     51 LUTs
+ latch                   cycloneii    54 x      1     54 LUTs
+
+ Number of ports :                     160
+ Number of nets :                      351
+ Number of instances :                 264
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of IOs :                       160
+ Number of LUTs :                      105
+ Number of accumulated instances :     264

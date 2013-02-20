@@ -1,0 +1,7 @@
+Inferred ROM
+------------
+  1. Instance: rtlc_controlvector_0n6ss1[8]_I1
+    File: C:/Users/Owner/Desktop/Past Classes/ECE 4435/HDS/Modic_Pipeline/Modic_Pipeline_lib/hdl/Decode_Controller_Decode_Controller.vhd , Net: rtlc_controlvector_0n6ss1[8]
+    port 1  address width: 6
+    port 1  data width: 8
+

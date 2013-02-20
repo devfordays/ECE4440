@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Execute_Stage
+DEFAULT_FILE atom Execute_Stage_Execute_Stage.vhd

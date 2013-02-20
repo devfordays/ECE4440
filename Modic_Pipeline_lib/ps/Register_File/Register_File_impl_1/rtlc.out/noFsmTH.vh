@@ -1,0 +1,3 @@
+Modic_Pipeline_lib.Register_File_four_sixteen_MUX(Register_File_four_sixteen_MUX) rtlc_no_parameters
+Modic_Pipeline_lib.Register_File_TriState(Register_File_TriState) :16:
+Modic_Pipeline_lib.Reg(Reg) :16:

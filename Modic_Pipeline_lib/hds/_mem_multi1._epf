@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Mem_Multi1
+DEFAULT_FILE atom Mem_Multi1_Mem_Multi1.vhd

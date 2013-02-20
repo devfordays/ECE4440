@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Register_File_four_sixteen_MUX
+DEFAULT_FILE atom Register_File_four_sixteen_MUX_Register_File_four_sixteen_MUX.vhd
