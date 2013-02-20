@@ -1,0 +1,4 @@
+change easyram
+compile/simulate easyram
+simulate 5stagePipeline
+simulate pipeline testbench
