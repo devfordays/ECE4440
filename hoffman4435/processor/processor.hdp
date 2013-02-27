@@ -1,0 +1,16 @@
+[ModelSim]
+processor_lib = $HDS_PROJECT_DIR\processor_lib\work
+[hdl]
+processor_lib = E:/Dropbox/vhdl
+[hds]
+processor_lib = $HDS_PROJECT_DIR/processor_lib/hds
+[hds_settings]
+default_library = processor_lib
+design_root = processor_lib.FPadd_pipelined()lab2/lab2/lab2_lib/hdl/FPadd_pipelined_behavior.vhd
+version = 2
+[library_files_inclusion]
+processor_lib = specify
+[library_type]
+processor_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

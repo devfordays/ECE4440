@@ -1,0 +1,2 @@
+DEFAULT_FILE atom FetchStage_fetchArch.vhd
+DEFAULT_ARCHITECTURE atom fetchArch

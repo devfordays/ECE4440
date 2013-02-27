@@ -1,0 +1,2 @@
+DEFAULT_FILE atom mux16bitx4_behavior.vhd
+DEFAULT_ARCHITECTURE atom behavior

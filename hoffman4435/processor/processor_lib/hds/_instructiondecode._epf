@@ -1,0 +1,2 @@
+DEFAULT_FILE atom InstructionDecode_behavior.vhd
+DEFAULT_ARCHITECTURE atom behavior

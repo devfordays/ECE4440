@@ -1,0 +1,11 @@
+[hdl]
+ISAtranslation_lib = $HDS_PROJECT_DIR\ISAtranslation_lib\hdl
+[hds]
+ISAtranslation_lib = $HDS_PROJECT_DIR\ISAtranslation_lib\hds
+[hds_settings]
+default_library = ISAtranslation_lib
+version = 2
+[library_type]
+ISAtranslation_lib = regular
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

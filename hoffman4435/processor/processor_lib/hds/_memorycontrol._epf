@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behavior
+DEFAULT_FILE atom lab6/memoryControl_behavior.vhd

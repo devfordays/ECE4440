@@ -1,0 +1,1313 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Dropbox\vhdl\processor\processor_lib\work
+T_opt
+VW;D5?zZ[8?QoC[UE]gc953
+04 18 8 work reservationstation behavior 1
+=1-001ec9312c85-509a6843-17-12a4
+Z1 o-quiet -auto_acc_if_foreign -work processor_lib -L processor_lib
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dE:\Dropbox\vhdl\processor\processor_lib\work
+T_opt1
+Vem76EjD=h4^79@K?NeMF^3
+04 9 8 work writeback behavior 1
+=1-001ec9312c85-509a6822-30a-ad4
+R1
+n@_opt1
+R2
+R3
+T_opt2
+V18YeVTEE0@e_m9Ro04Knn0
+04 12 8 work registerfile behavior 1
+=1-001ec9312c85-509a686a-239-11f8
+R1
+n@_opt2
+R2
+R3
+T_opt3
+VNj<=PBKVfNiUIT1n5n`eZ3
+04 10 9 work fetchstage fetcharch 1
+=1-001ec9312c85-50a3ab23-3c7-109c
+R1
+n@_opt3
+R2
+R3
+T_opt4
+VcO4oL8<0W5G`I=7zINzYH3
+Z4 04 9 8 work processor behavior 1
+=1-001ec9312c85-50a3b3f1-d8-568
+R1
+n@_opt4
+R2
+T_opt5
+VXH_;OUf=]7S?Y2SNEMDW=2
+R4
+=1-001ec9312c85-50a3ae56-377-1154
+R1
+n@_opt5
+R2
+R3
+Ealu
+Z5 w1351044353
+Z6 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z9 8E:/Dropbox/vhdl/ALU_behavior.vhd
+Z10 FE:/Dropbox/vhdl/ALU_behavior.vhd
+l0
+L14
+VmUOjbN8F9WX48T2][WbX81
+Z11 OL;C;10.1c;51
+32
+Z12 !s108 1352848946.775000
+Z13 !s90 -work|processor_lib|-nologo|-f|C:/Users/drake/AppData/Local/Temp/Files0|
+Z14 !s107 E:/Dropbox/vhdl/ALUcontrol_behavior.vhd|E:/Dropbox/vhdl/ALU_behavior.vhd|
+Z15 o-work processor_lib -nologo
+Z16 tExplicit 1
+!s100 >^bgP7KJEJzjL]g]5ceo<0
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z17 DEx4 work 3 alu 0 22 mUOjbN8F9WX48T2][WbX81
+l23
+L22
+VjDmb;]LT6`k]GCYnPQTmF1
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 Cdb;@=2DJ?c`nNMN^ao?V3
+!i10b 1
+Ealucontrol
+Z18 w1351044878
+R6
+R7
+R8
+R3
+Z19 8E:/Dropbox/vhdl/ALUcontrol_behavior.vhd
+Z20 FE:/Dropbox/vhdl/ALUcontrol_behavior.vhd
+l0
+L14
+VMoR_STmgE<<ME1ozhmYz21
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 Y]LW`=A`jYSea1@[d37dP1
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z21 DEx4 work 10 alucontrol 0 22 MoR_STmgE<<ME1ozhmYz21
+l21
+L20
+VMI;RI3^gRUDCa^C^5I3IM1
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 5C@idhL?kEKk^YScDGCzn2
+!i10b 1
+Ealustage
+Z22 w1352769101
+R6
+R7
+R8
+R3
+Z23 8E:/Dropbox/vhdl/ALUstage_behavior.vhd
+Z24 FE:/Dropbox/vhdl/ALUstage_behavior.vhd
+l0
+L14
+VEoFe8YhkCbS=Ugb`V`hWl1
+R11
+32
+Z25 !s108 1352848947.477000
+Z26 !s90 -work|processor_lib|-nologo|-f|C:/Users/drake/AppData/Local/Temp/Files2|
+Z27 !s107 E:/Dropbox/vhdl/ALUstage_behavior.vhd|E:/Dropbox/vhdl/jumpControl_behavior.vhd|E:/Dropbox/vhdl/reg_behavior.vhd|
+R15
+R16
+!s100 R0AE^iMXNN1FW`L6JFDCd0
+!i10b 1
+Abehavior
+Z28 DEx4 work 8 flipflop 0 22 FmN4e]eD:h6[B45GS5izz2
+Z29 DEx4 work 3 reg 0 22 ih@Je[nB2`FgQJOK;;51G1
+R17
+Z30 DEx4 work 11 jumpcontrol 0 22 Pcd_@<gENTZXlj:BG4cbc3
+R21
+Z31 DEx4 work 12 nbitdisabler 0 22 QIR:`Y[Kbm7ooedI7[Ihh1
+R6
+R7
+R8
+Z32 DEx4 work 8 alustage 0 22 EoFe8YhkCbS=Ugb`V`hWl1
+l33
+L26
+V[LlE4Ra<=ENmgIcM=>H?e3
+R11
+32
+R25
+R26
+R27
+R15
+R16
+!s100 Sk2?DVkFzVzTkZ=@_DhYg1
+!i10b 1
+Edflip
+Z33 w1351622148
+R6
+R7
+R8
+R3
+Z34 8E:/Dropbox/vhdl/dflip_behavior.vhd
+Z35 FE:/Dropbox/vhdl/dflip_behavior.vhd
+l0
+L14
+Vi1RgW_K8[eBP51ACg?NbN2
+R11
+33
+Z36 !s108 1352775706.929000
+Z37 !s90 -work|processor_lib|-nologo|-2008|-f|C:/Users/drake/AppData/Local/Temp/Files1|
+Z38 !s107 E:/Dropbox/vhdl/PROCESSOR_behavior.vhd|E:/Dropbox/vhdl/memStage_behavior.vhd|E:/Dropbox/vhdl/memControl_behavior.vhd|E:/Dropbox/vhdl/dflip_behavior.vhd|E:/Dropbox/vhdl/memoryArbiter_behavior.vhd|
+Z39 o-work processor_lib -nologo -2008
+R16
+!s100 jl^MJDm3@=U_cc0fRh1250
+!i10b 1
+Abehavior
+R6
+R7
+R8
+DEx4 work 5 dflip 0 22 i1RgW_K8[eBP51ACg?NbN2
+l22
+L21
+Vbn99HRA`klk>IPQ=TkoL81
+R11
+33
+R36
+R37
+R38
+R39
+R16
+!s100 RGJ_[bUHnGYg[?QXzW?QU2
+!i10b 1
+Efetchstage
+Z40 w1352905699
+R6
+R7
+R8
+R3
+Z41 8E:/Dropbox/vhdl/FetchStage_fetchArch.vhd
+Z42 FE:/Dropbox/vhdl/FetchStage_fetchArch.vhd
+l0
+L14
+V4oQ<LeSF_ceIeb?j=NEeV2
+R11
+32
+Z43 !s108 1352905705.931000
+R13
+Z44 !s107 E:/Dropbox/vhdl/FetchStage_fetchArch.vhd|
+R15
+R16
+!s100 MTjJ1[L;95L91Pd3NbzlG1
+!i10b 1
+Afetcharch
+Z45 DEx4 work 8 inc16bit 0 22 KAAfSRgzdC7m6;o[3LJc30
+R29
+Z46 DEx4 work 10 mux16bitx4 0 22 bFn>ADSHcE]bXNh3m?hzT1
+Z47 DEx4 work 9 ifcontrol 0 22 nOY]zznEj6X^cCENKB_>F3
+R6
+R7
+R8
+Z48 DEx4 work 10 fetchstage 0 22 4oQ<LeSF_ceIeb?j=NEeV2
+l29
+L21
+VP0^dhn3AV[[G8?]f>m9@S0
+R11
+32
+R43
+R13
+R44
+R15
+R16
+!s100 DilYVn?C?]6X4B:1iDJ^82
+!i10b 1
+Eflipflop
+Z49 w1351043030
+R6
+R7
+R8
+R3
+Z50 8E:/Dropbox/vhdl/lab6/lab6_lib/hdl/flipflop_behavior.vhd
+Z51 FE:/Dropbox/vhdl/lab6/lab6_lib/hdl/flipflop_behavior.vhd
+l0
+L14
+VFmN4e]eD:h6[B45GS5izz2
+R11
+32
+Z52 !s108 1351621110.754000
+R13
+Z53 !s107 E:/Dropbox/vhdl/lab6/lab6_lib/hdl/ALUstage_behavior.vhd|E:/Dropbox/vhdl/lab6/lab6_lib/hdl/flipflop_behavior.vhd|E:/Dropbox/vhdl/lab6/lab6_lib/hdl/NewFolder/jumpControl_behavior.vhd|E:/Dropbox/vhdl/lab5/lab5_lib/hdl/reg_behavior.vhd|E:/Dropbox/vhdl/lab6/lab6_lib/hdl/ALUcontrol_behavior.vhd|E:/Dropbox/vhdl/lab6/lab6_lib/hdl/ALU_behavior.vhd|
+R15
+R16
+!s100 4[Nl22]m8n0BaS9o8ZFW41
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R28
+l22
+L21
+V[C?]Q9FzciiT5?Db=o]zP3
+R11
+32
+R52
+R13
+R53
+R15
+R16
+!s100 1E7gbHD]mgXji@1CUb3L:2
+!i10b 1
+Eidcontrol
+Z54 w1352775360
+R6
+R7
+R8
+R3
+Z55 8E:/Dropbox/vhdl/IDcontrol_behavior.vhd
+Z56 FE:/Dropbox/vhdl/IDcontrol_behavior.vhd
+l0
+L14
+V`]>9cER71Y=gD4;`LEe@N1
+R11
+32
+Z57 !s108 1352848948.647000
+Z58 !s90 -work|processor_lib|-nologo|-f|C:/Users/drake/AppData/Local/Temp/Files4|
+Z59 !s107 E:/Dropbox/vhdl/FetchStage_fetchArch.vhd|E:/Dropbox/vhdl/inc16bit_behavior.vhd|E:/Dropbox/vhdl/mux16bitx4_behavior.vhd|E:/Dropbox/vhdl/IFcontrol_behavior.vhd|E:/Dropbox/vhdl/InstructionDecode_behavior.vhd|E:/Dropbox/vhdl/IDcontrol_behavior.vhd|
+R15
+R16
+!s100 hLLkWCgck0jE3RRaU[ih90
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z60 DEx4 work 9 idcontrol 0 22 `]>9cER71Y=gD4;`LEe@N1
+l27
+L26
+Vf@KkRdN41`nA4SUZe=aoV1
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 ZEkD`P1LdbXieg9ZE?8I>1
+!i10b 1
+Eifcontrol
+Z61 w1352905608
+R6
+R7
+R8
+R3
+Z62 8E:/Dropbox/vhdl/IFcontrol_behavior.vhd
+Z63 FE:/Dropbox/vhdl/IFcontrol_behavior.vhd
+l0
+L14
+VnOY]zznEj6X^cCENKB_>F3
+R11
+32
+Z64 !s108 1352905635.941000
+R13
+Z65 !s107 E:/Dropbox/vhdl/FetchStage_fetchArch.vhd|E:/Dropbox/vhdl/IFcontrol_behavior.vhd|
+R15
+R16
+!s100 CCWFO@W=[_6SA[CHY3L:Y3
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R47
+l21
+L20
+V0mM0NN0n8EAYOfj>5X9EY0
+R11
+32
+R64
+R13
+R65
+R15
+R16
+!s100 5RK_MG5melKb3[`9Az>[K2
+!i10b 1
+Einc16bit
+Z66 w1348619900
+R6
+R7
+R8
+R3
+Z67 8E:/Dropbox/vhdl/inc16bit_behavior.vhd
+Z68 FE:/Dropbox/vhdl/inc16bit_behavior.vhd
+l0
+L14
+VKAAfSRgzdC7m6;o[3LJc30
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 jLF7I2KgM;gPmcGC5:hM72
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R45
+l21
+L20
+VcWCKHA>jn>n]b4UWe8T@_0
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 chCU5c3^f[5Jc5KzbVoMb0
+!i10b 1
+Einstructiondecode
+Z69 w1352775703
+R6
+R7
+R8
+R3
+Z70 8E:/Dropbox/vhdl/InstructionDecode_behavior.vhd
+Z71 FE:/Dropbox/vhdl/InstructionDecode_behavior.vhd
+l0
+L14
+VBHo[Pf[d<fgW]U]AN4@Je3
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 6QfmgSS;fi9]TC6bL4RA;2
+!i10b 1
+Abehavior
+R29
+R60
+R6
+R7
+R8
+Z72 DEx4 work 17 instructiondecode 0 22 BHo[Pf[d<fgW]U]AN4@Je3
+l31
+L26
+VHUDKKnP8eW>Wo5K;7V9_U3
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 CAERYjOB_MW_SNPK<djEJ0
+!i10b 1
+Ejumpcontrol
+Z73 w1352769070
+R6
+R7
+R8
+R3
+Z74 8E:/Dropbox/vhdl/jumpControl_behavior.vhd
+Z75 FE:/Dropbox/vhdl/jumpControl_behavior.vhd
+l0
+L14
+VPcd_@<gENTZXlj:BG4cbc3
+R11
+32
+R25
+R26
+R27
+R15
+R16
+!s100 `FmF3P`04aXioGB[>bhjo2
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R30
+l24
+L23
+VAjJQ=Ii_V9WOMP]DJcZb>2
+R11
+32
+R25
+R26
+R27
+R15
+R16
+!s100 H`H9K20jVIF^zAjDoZ3Sj3
+!i10b 1
+Emake0
+Z76 w1352902053
+R6
+R7
+R8
+R3
+Z77 8E:/Dropbox/vhdl/make0_behavior.vhd
+Z78 FE:/Dropbox/vhdl/make0_behavior.vhd
+l0
+L14
+V^gMb=IHeli5Ie7IP?a11z0
+R11
+33
+Z79 !s108 1352902056.969000
+Z80 !s90 -work|processor_lib|-nologo|-2008|-f|C:/Users/drake/AppData/Local/Temp/Files0|
+Z81 !s107 E:/Dropbox/vhdl/make0_behavior.vhd|
+R39
+R16
+!s100 c;0X3dX3VcMV<z1Xi[06C1
+!i10b 1
+Abehavior
+R6
+R7
+R8
+DEx4 work 5 make0 0 22 ^gMb=IHeli5Ie7IP?a11z0
+l21
+L20
+V:1_RnMOomgX9;@QC73NZC2
+R11
+33
+R79
+R80
+R81
+R39
+R16
+!s100 1fZoI^62oWdl@:gRkzJ740
+!i10b 1
+Ememcontrol
+Z82 w1352775760
+R6
+R7
+R8
+R3
+Z83 8E:/Dropbox/vhdl/memControl_behavior.vhd
+Z84 FE:/Dropbox/vhdl/memControl_behavior.vhd
+l0
+L14
+VYWBLenO3lZ3V`331YCWJ51
+R11
+33
+Z85 !s108 1352848949.614000
+Z86 !s90 -work|processor_lib|-nologo|-2008|-f|C:/Users/drake/AppData/Local/Temp/Files5|
+Z87 !s107 E:/Dropbox/vhdl/PROCESSOR_behavior.vhd|E:/Dropbox/vhdl/WriteBack_behavior.vhd|E:/Dropbox/vhdl/WBcontrol_behavior.vhd|E:/Dropbox/vhdl/ReservationStation_behavior.vhd|E:/Dropbox/vhdl/reservationStationControl_behavior.vhd|E:/Dropbox/vhdl/RegisterFile_behavior.vhd|E:/Dropbox/vhdl/regFileRow_behavior.vhd|E:/Dropbox/vhdl/selector16_behavior.vhd|E:/Dropbox/vhdl/multiplex4to16_behavior.vhd|E:/Dropbox/vhdl/or16x16_behavior.vhd|E:/Dropbox/vhdl/memStage_behavior.vhd|E:/Dropbox/vhdl/memControl_behavior.vhd|E:/Dropbox/vhdl/memoryArbiter_behavior.vhd|E:/Dropbox/vhdl/SRAM_behavior.vhd|
+R39
+R16
+!s100 6f2:Q2h>iKP<6_6IfRl?W0
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z88 DEx4 work 10 memcontrol 0 22 YWBLenO3lZ3V`331YCWJ51
+l26
+L25
+V_4^;c?UR<Q1]?BU^F97zl1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 mlaDS;f]NoRWnjLoAWfIY1
+!i10b 1
+Ememoryarbiter
+Z89 w1352747091
+R6
+R7
+R8
+R3
+Z90 8E:/Dropbox/vhdl/memoryArbiter_behavior.vhd
+Z91 FE:/Dropbox/vhdl/memoryArbiter_behavior.vhd
+l0
+L14
+VoWEAlndD<3@[B7og>UoYh0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 c6aBg5KF`7a6j3DJQOW=Q2
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z92 DEx4 work 13 memoryarbiter 0 22 oWEAlndD<3@[B7og>UoYh0
+l32
+L31
+VHdmoPJCZ9`M@V=44<PfeQ3
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 XM7D12laKZ=QK9zW?PZJ;0
+!i10b 1
+Ememstage
+Z93 w1352775794
+R6
+R7
+R8
+R3
+Z94 8E:/Dropbox/vhdl/memStage_behavior.vhd
+Z95 FE:/Dropbox/vhdl/memStage_behavior.vhd
+l0
+L14
+V;FC]>@Q]h[GI1WKSY9M9`3
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 NlbcOMgTG_Q0ZCIC3fi=^0
+!i10b 1
+Abehavior
+R88
+R29
+R6
+R7
+R8
+Z96 DEx4 work 8 memstage 0 22 ;FC]>@Q]h[GI1WKSY9M9`3
+l32
+L28
+VXFB=m;]`mPKa=i6Z;<j]X0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 DcZ8EQK_KW3^3d^zkdJCD2
+!i10b 1
+Emultiplex4to16
+Z97 w1352251860
+R6
+R7
+R8
+R3
+Z98 8E:/Dropbox/vhdl/multiplex4to16_behavior.vhd
+Z99 FE:/Dropbox/vhdl/multiplex4to16_behavior.vhd
+l0
+L14
+VKN^=mOdbmR]H?>j^oj:::2
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 S?c;WVU3BhXlX^P3X^ZDL1
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z100 DEx4 work 14 multiplex4to16 0 22 KN^=mOdbmR]H?>j^oj:::2
+l22
+L21
+VNZjzTMGTNOEM9B>RVRAN^0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 1@a04Eh^oOZMnoRQOF]D;2
+!i10b 1
+Emux16bitx4
+Z101 w1348613062
+R6
+R7
+R8
+R3
+Z102 8E:/Dropbox/vhdl/mux16bitx4_behavior.vhd
+Z103 FE:/Dropbox/vhdl/mux16bitx4_behavior.vhd
+l0
+L14
+VbFn>ADSHcE]bXNh3m?hzT1
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 ?edRDKASnak]ZDR0<7gFB1
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R46
+l22
+L21
+VV9BUb_nPnZW?GDDTTS@DZ1
+R11
+32
+R57
+R58
+R59
+R15
+R16
+!s100 nO`hS`HKXEEXK8cGh9ZN=0
+!i10b 1
+Enbitdisabler
+Z104 w1352767360
+R6
+R7
+R8
+R3
+Z105 8E:/Dropbox/vhdl/nBitDisabler_behavior.vhd
+Z106 FE:/Dropbox/vhdl/nBitDisabler_behavior.vhd
+l0
+L14
+VQIR:`Y[Kbm7ooedI7[Ihh1
+R11
+33
+Z107 !s108 1352848947.149000
+R37
+Z108 !s107 E:/Dropbox/vhdl/nBitDisabler_behavior.vhd|
+R39
+R16
+!s100 lQKE`_6;eBVV<RJoAoB;`3
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R31
+l23
+L22
+VV39UWWA@BJBn@i_95=ZTn1
+R11
+33
+R107
+R37
+R108
+R39
+R16
+!s100 ne=b`:Y<SK5@cTM^hE5>:2
+!i10b 1
+Eor16x16
+Z109 w1352251410
+R6
+R7
+R8
+R3
+Z110 8E:/Dropbox/vhdl/or16x16_behavior.vhd
+Z111 FE:/Dropbox/vhdl/or16x16_behavior.vhd
+l0
+L14
+V0hfh<N[2mKoLbC?f;@7Z>2
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 d6gQAjKEm`Ke@ZolcnYC;2
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z112 DEx4 work 7 or16x16 0 22 0hfh<N[2mKoLbC?f;@7Z>2
+l21
+L20
+VEDWU]j[U@51^E7GZRf36M0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 f8Qfj1?K86fZVYfIP[;QA2
+!i10b 1
+Eor1bit
+Z113 w1352770448
+R6
+R7
+R8
+R3
+Z114 8E:/Dropbox/vhdl/OR1bit_behavior.vhd
+Z115 FE:/Dropbox/vhdl/OR1bit_behavior.vhd
+l0
+L14
+VCKb?jdB[VdYm]7e;fN@Sn1
+R11
+33
+Z116 !s108 1352848948.288000
+Z117 !s90 -work|processor_lib|-nologo|-2008|-f|C:/Users/drake/AppData/Local/Temp/Files3|
+Z118 !s107 E:/Dropbox/vhdl/OR1bit_behavior.vhd|
+R39
+R16
+!s100 LR?82JU<z3JAJR^NNS1JR1
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z119 DEx4 work 6 or1bit 0 22 CKb?jdB[VdYm]7e;fN@Sn1
+l21
+L20
+VoQ:UUAEMN:@^LPdjT`1_H1
+R11
+33
+R116
+R117
+R118
+R39
+R16
+!s100 k0?g0MU059[RKRU;z<e4K2
+!i10b 1
+Eprocessor
+Z120 w1352904244
+R6
+R7
+R8
+R3
+Z121 8E:/Dropbox/vhdl/PROCESSOR_behavior.vhd
+Z122 FE:/Dropbox/vhdl/PROCESSOR_behavior.vhd
+l0
+L14
+VQ_=U=GPL6fjP<ImanMzVE2
+R11
+33
+Z123 !s108 1352905706.252000
+R37
+Z124 !s107 E:/Dropbox/vhdl/PROCESSOR_behavior.vhd|
+R39
+R16
+!s100 C9bCnAl8i85gKlD4f0jfB2
+!i10b 1
+Abehavior
+Z125 DEx4 work 9 writeback 0 22 Wkkj:9`U4E1^]fEl=5CVj2
+Z126 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z127 DEx4 work 4 sram 0 22 A20]aZ]jj70VCDmS;lM5X0
+R92
+R96
+R32
+Z128 DEx4 work 18 reservationstation 0 22 oW<JL;DS:Q0bbA6lAjFV51
+Z129 DEx4 work 12 registerfile 0 22 nBY2oHT=2Obo^687:z=[c1
+R72
+R48
+R119
+R6
+R7
+R8
+DEx4 work 9 processor 0 22 Q_=U=GPL6fjP<ImanMzVE2
+l28
+L19
+V0n7K714O^cV9QK46;CcHO1
+R11
+33
+R123
+R37
+R124
+R39
+R16
+!s100 S;:0BiDF_?5X_=eZjHhT51
+!i10b 1
+Ereg
+Z130 w1351035143
+R6
+R7
+R8
+R3
+Z131 8E:/Dropbox/vhdl/reg_behavior.vhd
+Z132 FE:/Dropbox/vhdl/reg_behavior.vhd
+l0
+L14
+Vih@Je[nB2`FgQJOK;;51G1
+R11
+32
+R25
+R26
+R27
+R15
+R16
+!s100 87Fkm3DlzlSi6nESGa6S02
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R29
+l23
+L22
+Vk5UZ?I0BDEk4;>Y1EICFP3
+R11
+32
+R25
+R26
+R27
+R15
+R16
+!s100 SagaURPQIkGP[6XJRXcjB0
+!i10b 1
+Eregfilerow
+Z133 w1352247710
+R6
+R7
+R8
+R3
+Z134 8E:/Dropbox/vhdl/regFileRow_behavior.vhd
+Z135 FE:/Dropbox/vhdl/regFileRow_behavior.vhd
+l0
+L14
+VJ]B>d5^?l>:B2Ki?RAIKX0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 [K6SJ^j`i115n30?i^CC81
+!i10b 1
+Abehavior
+Z136 DEx4 work 10 selector16 0 22 l4Bh8bgN3CVo2O9F`a`<m1
+R29
+R6
+R7
+R8
+Z137 DEx4 work 10 regfilerow 0 22 J]B>d5^?l>:B2Ki?RAIKX0
+l24
+L22
+VU`mXV@mnmERN2mzmiLU:M1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 ki4Ha@V7;WaJbWWL3dEmH3
+!i10b 1
+Eregisterfile
+Z138 w1352251561
+R6
+R7
+R8
+R3
+Z139 8E:/Dropbox/vhdl/RegisterFile_behavior.vhd
+Z140 FE:/Dropbox/vhdl/RegisterFile_behavior.vhd
+l0
+L14
+VnBY2oHT=2Obo^687:z=[c1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 h8T32e_[o8bU8fNNzIhd;1
+!i10b 1
+Abehavior
+R112
+R137
+R100
+R6
+R7
+R8
+R129
+l29
+L25
+Vl:RoS55ih@GWL?daMmlV83
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 jFcoe0=DLM0[l`AEF;^e93
+!i10b 1
+Eregisterfilerow
+Z141 w1352246660
+R6
+R7
+R8
+R3
+Z142 8E:/Dropbox/vhdl/RegisterFileRow_behavior.vhd
+Z143 FE:/Dropbox/vhdl/RegisterFileRow_behavior.vhd
+l0
+L14
+V=j9GM@;Vid>2f]6gkFgHj2
+R11
+33
+Z144 !s108 1352246851.503000
+R37
+Z145 !s107 E:/Dropbox/vhdl/RegisterFileRow_behavior.vhd|E:/Dropbox/vhdl/triState16_behavior.vhd|
+R39
+R16
+!s100 oHbMR?UVo?JQ?0]FMRFPL2
+!i10b 1
+Abehavior
+Z146 DEx4 work 10 tristate16 0 22 MiCE_LiNTA?P8E_P15khd3
+R29
+R6
+R7
+R8
+DEx4 work 15 registerfilerow 0 22 =j9GM@;Vid>2f]6gkFgHj2
+l24
+L22
+V7gVkZ68fQKKeY4_@^jgOV2
+R11
+33
+R144
+R37
+R145
+R39
+R16
+!s100 3HoHKZ4KdUI8HcXHn5k^?2
+!i10b 1
+Ereservationstation
+Z147 w1352258328
+R6
+R7
+R8
+R3
+Z148 8E:/Dropbox/vhdl/ReservationStation_behavior.vhd
+Z149 FE:/Dropbox/vhdl/ReservationStation_behavior.vhd
+l0
+L14
+VoW<JL;DS:Q0bbA6lAjFV51
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 =:iM_H_SScDBV42W;?HTB1
+!i10b 1
+Abehavior
+R29
+R126
+Z150 DEx4 work 25 reservationstationcontrol 0 22 3cO2z;]1IVfZDXN=1UaQC2
+R6
+R7
+R8
+R128
+l28
+L23
+Vb8lDX?<`h?A[gm0@adjI:0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 >Geo>zeIhBkjl>mGRMS`K2
+!i10b 1
+Ereservationstationcontrol
+Z151 w1352258204
+R126
+R6
+R7
+R8
+R3
+Z152 8E:/Dropbox/vhdl/reservationStationControl_behavior.vhd
+Z153 FE:/Dropbox/vhdl/reservationStationControl_behavior.vhd
+l0
+L15
+V3cO2z;]1IVfZDXN=1UaQC2
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 Dh@MdI_kQ3;hnl<dR8>nJ2
+!i10b 1
+Abehavior
+R126
+R6
+R7
+R8
+R150
+l26
+L25
+VK3dLF;>d87BnCK?1;2aTZ0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 1WU_Y<UPVRZ`710KnMkR21
+!i10b 1
+Eselector16
+Z154 w1352247230
+R6
+R7
+R8
+R3
+Z155 8E:/Dropbox/vhdl/selector16_behavior.vhd
+Z156 FE:/Dropbox/vhdl/selector16_behavior.vhd
+l0
+L14
+Vl4Bh8bgN3CVo2O9F`a`<m1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 N0o4I@d[cbPUzTiI_5^Q10
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R136
+l22
+L21
+VhaVmQUje_YIR>066c_RTG3
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 ;4]688bLTmeiG:[eoZV7^3
+!i10b 1
+Esram
+Z157 w1352769413
+R6
+R126
+R7
+R8
+R3
+Z158 8E:/Dropbox/vhdl/SRAM_behavior.vhd
+Z159 FE:/Dropbox/vhdl/SRAM_behavior.vhd
+l0
+L17
+VA20]aZ]jj70VCDmS;lM5X0
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 7=@zfI]5Jf5DBIdEP;8d:3
+!i10b 1
+Abehavior
+R6
+R126
+R7
+R8
+R127
+l37
+L23
+VDbO0ZhS2NbBDDa=WzkWEi1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 TOWE7=03X>K;aD1P6SW=c1
+!i10b 1
+Etristate
+Z160 w1352245746
+R6
+R7
+R8
+R3
+Z161 8E:/Dropbox/vhdl/triState_behavior.vhd
+Z162 FE:/Dropbox/vhdl/triState_behavior.vhd
+l0
+L14
+V5GHJQJNo`h@o]QM8MGIf@0
+R11
+33
+Z163 !s108 1352245762.100000
+R80
+Z164 !s107 E:/Dropbox/vhdl/RegisterFileRow_behavior.vhd|E:/Dropbox/vhdl/triState_behavior.vhd|
+R39
+R16
+!s100 6dIcUfXc<@>g5zN4>h_ld3
+!i10b 1
+Abehavior
+R6
+R7
+R8
+DEx4 work 8 tristate 0 22 5GHJQJNo`h@o]QM8MGIf@0
+l27
+L26
+VR@ki@Q6MYjc9W`;YZOM:d1
+R11
+33
+R163
+R80
+R164
+R39
+R16
+!s100 zgVQAS4_Rb9ddLODlm5za2
+!i10b 1
+Etristate16
+Z165 w1352246615
+R6
+R7
+R8
+R3
+Z166 8E:/Dropbox/vhdl/triState16_behavior.vhd
+Z167 FE:/Dropbox/vhdl/triState16_behavior.vhd
+l0
+L14
+VMiCE_LiNTA?P8E_P15khd3
+R11
+33
+R144
+R37
+R145
+R39
+R16
+!s100 OcH@IeQIzDF`kgz83o1AG0
+!i10b 1
+Abehavior
+R6
+R7
+R8
+R146
+l27
+L26
+Vcg4Zh[POFU0e:D1e]lz:m0
+R11
+33
+R144
+R37
+R145
+R39
+R16
+!s100 YzFM76BkfbCX8<BYWg;>L0
+!i10b 1
+Ewbcontrol
+Z168 w1352237753
+R6
+R7
+R8
+R3
+Z169 8E:/Dropbox/vhdl/WBcontrol_behavior.vhd
+Z170 FE:/Dropbox/vhdl/WBcontrol_behavior.vhd
+l0
+L14
+VJfjk?3iTo]Lf^Cb50c4Le3
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 m97ZHhzfHnjz]6[U=M8Sn2
+!i10b 1
+Abehavior
+R6
+R7
+R8
+Z171 DEx4 work 9 wbcontrol 0 22 Jfjk?3iTo]Lf^Cb50c4Le3
+l25
+L24
+VDV@6:XdUU^jo6hoghg8^h3
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 R`]29NS_EhjQ?1[MKc0cD0
+!i10b 1
+Ewriteback
+Z172 w1352238238
+R6
+R7
+R8
+R3
+Z173 8E:/Dropbox/vhdl/WriteBack_behavior.vhd
+Z174 FE:/Dropbox/vhdl/WriteBack_behavior.vhd
+l0
+L14
+VWkkj:9`U4E1^]fEl=5CVj2
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 Gic@Fb<oL6LV?I16hcX9>2
+!i10b 1
+Abehavior
+R171
+R6
+R7
+R8
+R125
+l24
+L23
+VBVeAgKejM<^0j2S_Dj8RR1
+R11
+33
+R85
+R86
+R87
+R39
+R16
+!s100 <>MoI>^;BO]7`J`A450Cc2
+!i10b 1

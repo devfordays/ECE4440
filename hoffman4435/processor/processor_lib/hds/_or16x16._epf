@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behavior
+DEFAULT_FILE atom or16x16_behavior.vhd

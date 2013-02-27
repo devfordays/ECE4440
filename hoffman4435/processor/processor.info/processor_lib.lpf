@@ -1,0 +1,10 @@
+version "1.0"
+pathExcludes [
+]
+libConfigurations [
+(config
+configName "Defaut Configuration"
+Configuration (ConfigSet
+)
+)
+]
