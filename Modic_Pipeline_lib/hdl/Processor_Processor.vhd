@@ -18,6 +18,7 @@ ENTITY Processor IS
         
         datamem: OUT std_logic_vector(15 DOWNTO 0); --memstage
         write: OUT std_logic; --memstage
+        read : OUT std_logic;
         addr: OUT std_logic_vector(15 DOWNTO 0); --memstage
         mdata3: IN std_logic_vector(15 DOWNTO 0) --memstage
         );
@@ -62,6 +63,7 @@ ARCHITECTURE Processor OF Processor IS
   signal last_control : std_logic_vector(17 DOWNTO 0);
   
   signal tempzero : std_logic := '0';
+  
 BEGIN
   --Fetch : entity work.Fetch_Stage(Fetch_Stage)
     --port map (jump, dirty, zero, reset, zero, clock, mdata, jaddr, maddr, instr, PCVal);
@@ -78,7 +80,7 @@ BEGIN
     port map (extra, left, right, controlvector, dest, control, clock, jaddr, result, destination, extradata, jump);
 
   Mem : entity work.Mem_Stage(Mem_Stage)
-    port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector);
+    port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector, read);
 
 
   WB : entity work.WB_Stage(WB_Stage)

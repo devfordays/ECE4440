@@ -70,6 +70,8 @@ ARCHITECTURE Five_Stage_Pipeline OF Five_Stage_Pipeline IS
   
   signal tempzero : std_logic := '0';
   
+  signal read : std_logic := '0';
+  
   
   
 BEGIN
@@ -88,7 +90,7 @@ BEGIN
     port map (extra, left, right, controlvector, dest, control, clock, jaddr, result, destination, extradata, jump);
 
   Mem : entity work.Mem_Stage(Mem_Stage)
-    port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector);
+    port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector, read);
 
 
   WB : entity work.WB_Stage(WB_Stage)

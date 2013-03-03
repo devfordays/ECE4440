@@ -31,7 +31,8 @@ ENTITY Mem_Stage IS
     clock : IN std_logic;
     --vector : OUT std_logic_vector(17 DOWNTO 0) := "000000000000000000"
     --control_vector_a : OUT std_logic_vector(17 DOWNTO 0) := "000000000000000000"
-  controlling : OUT std_logic_vector(17 DOWNTO 0) := "000000000000000000"
+  controlling : OUT std_logic_vector(17 DOWNTO 0) := "000000000000000000";
+  read : OUT std_logic := '0'
   );
 END ENTITY Mem_Stage;
 
@@ -54,6 +55,7 @@ BEGIN
   desting <= desta;
   extraing <= extraa;
   write <= control_vector_a(2);
+  read <= control_vector_a(1);
   
   
   
@@ -124,5 +126,6 @@ BEGIN
       
   FMux : entity work.Mem_Multi1(Mem_Multi1)
     port map(Dout, zero, mdelayFromMem, mdelay);
+      
 END ARCHITECTURE Mem_Stage;
 

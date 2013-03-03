@@ -76,10 +76,10 @@ BEGIN
     RM := "01";
     IF instr(8) = '0' THEN -- LIL
       EM := "00";
-      controlvector <= R0 & R1 & LM & RM & EM & DM & "00001" & instr(8) & "00" & '1';
+      controlvector <= R0 & R1 & LM & RM & EM & DM & "00001" & instr(8) & "01" & '1';
     ELSE -- LIH
       EM := "01";
-      controlvector <= R0 & R1 & LM & RM & EM & DM & "00010" & instr(8) & "00" & '1';
+      controlvector <= R0 & R1 & LM & RM & EM & DM & "00010" & instr(8) & "01" & '1';
     END IF; 
     ResA <= instr(12 DOWNTO 9);
     W <= '1';
