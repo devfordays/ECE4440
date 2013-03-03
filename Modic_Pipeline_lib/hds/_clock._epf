@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom clock
+DEFAULT_FILE atom clock_clock.vhd

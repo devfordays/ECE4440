@@ -1,0 +1,4 @@
+CONFIGURATION Register_Tracker_Control_MUX_Register_Tracker_Control_MUX_config OF Register_Tracker_Control_MUX IS
+   FOR Register_Tracker_Control_MUX
+   END FOR;
+END Register_Tracker_Control_MUX_Register_Tracker_Control_MUX_config;

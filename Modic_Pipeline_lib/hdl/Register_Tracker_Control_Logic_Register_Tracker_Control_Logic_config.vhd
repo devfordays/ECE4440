@@ -1,0 +1,4 @@
+CONFIGURATION Register_Tracker_Control_Logic_Register_Tracker_Control_Logic_config OF Register_Tracker_Control_Logic IS
+   FOR Register_Tracker_Control_Logic
+   END FOR;
+END Register_Tracker_Control_Logic_Register_Tracker_Control_Logic_config;

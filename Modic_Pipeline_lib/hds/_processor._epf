@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Processor
+DEFAULT_FILE atom Processor_Processor.vhd
