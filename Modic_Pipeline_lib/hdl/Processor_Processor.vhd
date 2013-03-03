@@ -13,7 +13,6 @@ USE ieee.std_logic_arith.all;
 
 ENTITY Processor IS
   PORT( reset, clock: IN std_logic; 
-        output_reset: OUT std_logic;
         maddr: OUT std_logic_vector(15 DOWNTO 0); --fetch
         mdata: IN std_logic_vector(15 DOWNTo 0); --fetch
         
@@ -49,7 +48,9 @@ ARCHITECTURE Processor OF Processor IS
   signal control : std_logic_vector(17 DOWNTO 0);
   
   --signal mdelayfrommem, write : std_logic;
-  signal mdelayfrommem : std_logic;
+  signal mdelayfrommem : std_logic := '0';
+  signal mdelaytofetch : std_logic := '0';
+  
   --signal data, addr, datamem : std_logic_vector(15 DOWNTO 0);
   --signal data, addr : std_logic_vector(15 DOWNTO 0);
   signal data : std_logic_vector(15 DOWNTO 0);
@@ -65,7 +66,7 @@ BEGIN
   --Fetch : entity work.Fetch_Stage(Fetch_Stage)
     --port map (jump, dirty, zero, reset, zero, clock, mdata, jaddr, maddr, instr, PCVal);
       Fetch : entity work.Fetch_Stage(Fetch_Stage)
-        port map (jump, dirty, zero, reset, zero, clock, mdata, result, maddr, instr, PCVal);
+        port map (jump, dirty, mdelaytofetch, reset, zero, clock, mdata, result, maddr, instr, PCVal);
 
   --Decode : entity work.Decode_Stage(Decode_Stage)
     --port map (PCVal, instr, RFD0, RFD1, clock, dirty, left, right, extra, RFA0, RFA1, dest, controlvector, ResA, W); 
@@ -77,7 +78,7 @@ BEGIN
     port map (extra, left, right, controlvector, dest, control, clock, jaddr, result, destination, extradata, jump);
 
   Mem : entity work.Mem_Stage(Mem_Stage)
-    port map (destination, maddr, zero, extradata, result, control, mdata3, data, addr, tempzero, datamem, write, desty, clock, vector);
+    port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector);
 
 
   WB : entity work.WB_Stage(WB_Stage)

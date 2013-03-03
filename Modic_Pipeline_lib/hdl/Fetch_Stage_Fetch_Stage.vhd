@@ -12,7 +12,10 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
 ENTITY Fetch_Stage IS
-  PORT(jump, stall, mdelay, reset, int, clock: IN std_logic;
+  PORT(--jump, stall, mdelay, reset, int, clock: IN std_logic;
+    jump, stall : IN std_logic;
+    mdelay : IN std_logic := '0';
+    reset, int, clock : IN std_logic;
     mdata, jaddr: IN std_logic_vector(15 DOWNTO 0);
     maddr, instr, PCVal: OUT std_logic_vector(15 DOWNTO 0) := "0000000000000000" );
     --maddr, instr, pcincremented: OUT std_logic_vector(15 DOWNTO 0) := "0000000000000000" );

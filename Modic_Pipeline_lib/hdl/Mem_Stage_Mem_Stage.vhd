@@ -14,7 +14,7 @@ USE ieee.std_logic_arith.all;
 ENTITY Mem_Stage IS
   PORT( dest: IN std_logic_vector(3 DOWNTO 0); --from execute stage
     Faddr : IN std_logic_vector(15 DOWNTO 0);
-    mdelayFromMem : IN std_logic;
+    mdelayFromMem : IN std_logic := '0';
     extra, result: IN std_logic_vector(15 DOWNTO 0); --from execute stage
     control_vector: IN std_logic_vector(17 DOWNTO 0); --from execute stage
     mdata: IN std_logic_vector(15 DOWNTO 0); --from memory
@@ -54,6 +54,14 @@ BEGIN
   desting <= desta;
   extraing <= extraa;
   write <= control_vector_a(2);
+  
+  
+  
+  
+  mdelay_fetch <= mdelayFromMem;
+  
+  
+  
   
   --destRegister : entity work.Reg(Reg)
     --GENERIC MAP(size => 4)
@@ -111,8 +119,8 @@ BEGIN
       DMux : entity work.Mem_Multi1(Mem_Multi1)
         port map(control_vector_a(2), control_vector_a(1), one, Dout);
       
-    EMux : entity work.Mem_Multi1(Mem_Multi1)
-      port map(Dout, mdelayFromMem, one, mdelay_fetch);
+    --EMux : entity work.Mem_Multi1(Mem_Multi1)
+      --port map(Dout, mdelayFromMem, one, mdelay_fetch);
       
   FMux : entity work.Mem_Multi1(Mem_Multi1)
     port map(Dout, zero, mdelayFromMem, mdelay);
