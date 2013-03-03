@@ -14,20 +14,23 @@ USE ieee.std_logic_arith.all;
 ENTITY Five_Stage_Pipeline IS
   PORT( reset, clock: IN std_logic
         --fetch_reset: OUT std_logic;
---        maddr: OUT std_logic_vector(15 DOWNTO 0); --fetch
---        mdata: IN std_logic_vector(15 DOWNTo 0); --fetch
+ --      maddr: OUT std_logic_vector(15 DOWNTO 0); --fetch
+ --       mdata: IN std_logic_vector(15 DOWNTo 0); --fetch
 --        
---        datamem: OUT std_logic_vector(15 DOWNTO 0); --memstage
---        write: OUT std_logic; --memstage
---        addr: OUT std_logic_vector(15 DOWNTO 0); --memstage
---        mdata3: IN std_logic_vector(15 DOWNTO 0) --memstage
+  --      datamem: OUT std_logic_vector(15 DOWNTO 0); --memstage
+  --      write: OUT std_logic; --memstage
+  --      addr: OUT std_logic_vector(15 DOWNTO 0); --memstage
+  --      mdata3: IN std_logic_vector(15 DOWNTO 0) --memstage
   
   );
 END ENTITY Five_Stage_Pipeline;
 
 --
 ARCHITECTURE Five_Stage_Pipeline OF Five_Stage_Pipeline IS
+  
+  
   signal jump, mdelay, int, stall: std_logic;
+  
   signal mdata, mdata3, jaddr: std_logic_vector(15 DOWNTO 0);
   --signal mdata3, jaddr: std_logic_vector(15 DOWNTO 0);
   --signal jaddr: std_logic_vector(15 DOWNTO 0);
@@ -49,8 +52,14 @@ ARCHITECTURE Five_Stage_Pipeline OF Five_Stage_Pipeline IS
   signal destination : std_logic_vector(3 DOWNTO 0);
   signal control : std_logic_vector(17 DOWNTO 0);
   
-  signal mdelayfrommem, write : std_logic;
+  
+  
+  signal mdelayfrommem, write : std_logic; 
   --signal mdelayfrommem : std_logic;
+  
+  
+  
+  
   signal data, addr, datamem : std_logic_vector(15 DOWNTO 0);
   --signal data, addr : std_logic_vector(15 DOWNTO 0);
   --signal data : std_logic_vector(15 DOWNTO 0);
@@ -61,12 +70,17 @@ ARCHITECTURE Five_Stage_Pipeline OF Five_Stage_Pipeline IS
   signal dataout : std_logic_vector(15 DOWNTO 0);
   signal last_control : std_logic_vector(17 DOWNTO 0);
   
+  
+  
   signal tempzero : std_logic := '0';
+  
+  
+  
 BEGIN
   --Fetch : entity work.Fetch_Stage(Fetch_Stage)
     --port map (jump, dirty, zero, reset, zero, clock, mdata, jaddr, maddr, instr, PCVal);
-      Fetch : entity work.Fetch_Stage(Fetch_Stage)
-        port map (jump, dirty, zero, reset, zero, clock, mdata, result, maddr, instr, PCVal);
+  Fetch : entity work.Fetch_Stage(Fetch_Stage)
+    port map (jump, dirty, zero, reset, zero, clock, mdata, result, maddr, instr, PCVal);
 
   --Decode : entity work.Decode_Stage(Decode_Stage)
     --port map (PCVal, instr, RFD0, RFD1, clock, dirty, left, right, extra, RFA0, RFA1, dest, controlvector, ResA, W); 
@@ -87,11 +101,11 @@ BEGIN
   --MainMemoryHandler : entity work.SRAM(behavior)
     --port map (addr, datamem, clock, vector(2), mdata);
       
-  --FetchStageMemory : entity work.easy_RAM_simu(behavior)
-    --port map(reset, zero16, zero, maddr, mdata);    
+  FetchStageMemory : entity work.easy_RAM_simu(behavior)
+    port map(reset, zero16, zero, maddr, mdata);    
       
-  --MemStageMemory : entity work.easy_RAM_simu(behavior)
-    --port map(reset, datamem, write, addr, mdata3);
+  MemStageMemory : entity work.easy_RAM_simu(behavior)
+    port map(reset, datamem, write, addr, mdata3);
       
   --RegisterTracker : entity work.Register_Tracker(Register_Tracker)
     --port map (RFA0, RFA1, ResA, destin, controlvector(17), controlvector(16), W, last_control(0), clock, dirty);

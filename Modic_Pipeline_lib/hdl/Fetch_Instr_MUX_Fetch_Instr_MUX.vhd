@@ -21,10 +21,12 @@ END ENTITY Fetch_Instr_MUX;
 ARCHITECTURE Fetch_Instr_MUX OF Fetch_Instr_MUX IS
 BEGIN
   --PROCESS(mdata, reset, int, mdelay, stall, jump)
-  PROCESS(mdata, reset, int, mdelay, stall)
+  --PROCESS(mdata, reset, int, mdelay, stall)
+  PROCESS(mdata, reset, int, stall)
   BEGIN
     --IF reset = '0' and int = '0' and mdelay = '0' and stall = '0' and jump = '0' THEN
-      IF reset = '0' and int = '0' and mdelay = '0' and stall = '0' THEN
+      --IF reset = '0' and int = '0' and mdelay = '0' and stall = '0' THEN
+      IF reset = '0' and int = '0' and stall = '0' THEN
 
       instr <= mdata;
     ELSE
