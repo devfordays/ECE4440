@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom valid_instr_cache
+DEFAULT_FILE atom valid_instr_cache_valid_instr_cache.vhd

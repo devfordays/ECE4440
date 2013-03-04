@@ -489,17 +489,17 @@ name "easy_RAM_simu"
 on 19
 fa [
 (IbdCFA
-l "hDOut"
-p &36
+l "hAddr"
+p &35
 c *37 (IbdNet
 d (Decl
-n "hDOut"
+n "addr"
 t "std_logic_vector"
 b "(15 DOWNTO 0)"
-o 6
+o 3
 )
-uid 50,0
-on 14
+uid 44,0
+on 11
 nodes [
 &31
 &13
@@ -525,27 +525,27 @@ nodes [
 )
 )
 (IbdCFA
-l "rst"
-p &32
-c &30
-)
-(IbdCFA
-l "hAddr"
-p &35
+l "hDOut"
+p &36
 c *39 (IbdNet
 d (Decl
-n "addr"
+n "hDOut"
 t "std_logic_vector"
 b "(15 DOWNTO 0)"
-o 3
+o 6
 )
-uid 44,0
-on 11
+uid 50,0
+on 14
 nodes [
 &31
 &13
 ]
 )
+)
+(IbdCFA
+l "rst"
+p &32
+c &30
 )
 (IbdCFA
 l "wr"
@@ -625,34 +625,9 @@ nodes [
 )
 )
 (IbdCFA
-l "mdata3"
-p &22
-c &37
-)
-(IbdCFA
-l "datamem"
-p &19
-c &38
-)
-(IbdCFA
-l "output_reset"
-p &16
-c &30
-)
-(IbdCFA
 l "addr"
 p &21
-c &39
-)
-(IbdCFA
-l "write"
-p &20
-c &40
-)
-(IbdCFA
-l "mdata"
-p &18
-c &41
+c &37
 )
 (IbdCFA
 l "clock"
@@ -738,6 +713,31 @@ ucp [
 )
 )
 (IbdCFA
+l "datamem"
+p &19
+c &38
+)
+(IbdCFA
+l "mdata3"
+p &22
+c &39
+)
+(IbdCFA
+l "output_reset"
+p &16
+c &30
+)
+(IbdCFA
+l "write"
+p &20
+c &40
+)
+(IbdCFA
+l "mdata"
+p &18
+c &41
+)
+(IbdCFA
 l "reset"
 p &14
 c &48
@@ -756,10 +756,10 @@ ucp [
 rowContainer (IbdRowContainer
 uid 16,0
 optionalChildren [
-&39
+&37
 &44
 &38
-&37
+&39
 &23
 &41
 &30
@@ -973,7 +973,7 @@ uid 39,0
 *83 (MNetRow
 p 11
 uid 45,0
-net &39
+net &37
 )
 *84 (MNetRow
 p 12
@@ -988,7 +988,7 @@ net &38
 *86 (MNetRow
 p 14
 uid 51,0
-net &37
+net &39
 )
 *87 (MNetRow
 p 15
@@ -1104,7 +1104,7 @@ font "Tahoma,10,0"
 )
 uid 17,0
 )
-lastUid 157,0
+lastUid 238,0
 genericsCommonDM (CommonDM
 ldm (LogicalDM
 emptyRow *92 (LEmptyRow

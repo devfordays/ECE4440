@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom ramsp
+DEFAULT_FILE atom ramsp_ramsp.vhd
