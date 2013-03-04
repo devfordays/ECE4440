@@ -1,4 +1,0 @@
-CONFIGURATION Register_File_four_sixteen_MUX_Register_File_four_sixteen_MUX_config OF Register_File_four_sixteen_MUX IS
-   FOR Register_File_four_sixteen_MUX
-   END FOR;
-END Register_File_four_sixteen_MUX_Register_File_four_sixteen_MUX_config;

@@ -206,140 +206,23 @@ uid 15,0
 name "Top_Level_View"
 on 7
 fa [
-]
-dec [
-]
-)
-*13 (IbdHdsComponent
-archFileType "UNKNOWN"
-p [
-*14 (IbdCptPort
-uid 90,0
-p (LogicalPort
-decl (Decl
-n "reset"
-t "std_logic"
-o 1
-)
-)
-)
-*15 (IbdCptPort
-uid 91,0
-p (LogicalPort
-decl (Decl
-n "clock"
-t "std_logic"
-o 2
-)
-)
-)
-*16 (IbdCptPort
-uid 92,0
-p (LogicalPort
-m 1
-decl (Decl
-n "output_reset"
-t "std_logic"
-o 3
-)
-)
-)
-*17 (IbdCptPort
-uid 93,0
-p (LogicalPort
-m 1
-decl (Decl
-n "maddr"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 4
-)
-)
-)
-*18 (IbdCptPort
-uid 94,0
-p (LogicalPort
-decl (Decl
-n "mdata"
-t "std_logic_vector"
-b "(15 DOWNTo 0)"
-o 5
-)
-)
-)
-*19 (IbdCptPort
-uid 95,0
-p (LogicalPort
-m 1
-decl (Decl
-n "datamem"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 6
-)
-)
-)
-*20 (IbdCptPort
-uid 96,0
-p (LogicalPort
-m 1
-decl (Decl
-n "write"
-t "std_logic"
-o 7
-)
-)
-)
-*21 (IbdCptPort
-uid 97,0
-p (LogicalPort
-m 1
-decl (Decl
-n "addr"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 8
-)
-)
-)
-*22 (IbdCptPort
-uid 98,0
-p (LogicalPort
-decl (Decl
-n "mdata3"
-t "std_logic_vector"
-b "(15 DOWNTO 0)"
-o 9
-)
-)
-)
-]
-inst "U_1"
-lib "Modic_Pipeline_lib"
-ele [
-]
-ordering 1
-uid 62,0
-name "Processor"
-on 10
-fa [
-(IbdCFA
-l "maddr"
-p &17
-c *23 (IbdNet
+(IbdNFA
+io "I"
+c *13 (IbdNet
 d (Decl
-n "maddr"
+n "hDIn"
 t "std_logic_vector"
 b "(15 DOWNTO 0)"
-o 7
+o 10
 )
-uid 52,0
-on 15
+uid 272,0
+on 18
 nodes [
-*24 (IbdHdsComponent
+&12
+*14 (IbdHdsComponent
 archFileType "UNKNOWN"
 p [
-*25 (IbdCptPort
+*15 (IbdCptPort
 uid 108,0
 p (LogicalPort
 decl (Decl
@@ -349,7 +232,7 @@ o 1
 )
 )
 )
-*26 (IbdCptPort
+*16 (IbdCptPort
 uid 109,0
 p (LogicalPort
 decl (Decl
@@ -360,7 +243,7 @@ o 2
 )
 )
 )
-*27 (IbdCptPort
+*17 (IbdCptPort
 uid 110,0
 p (LogicalPort
 decl (Decl
@@ -370,7 +253,7 @@ o 3
 )
 )
 )
-*28 (IbdCptPort
+*18 (IbdCptPort
 uid 111,0
 p (LogicalPort
 decl (Decl
@@ -381,7 +264,7 @@ o 4
 )
 )
 )
-*29 (IbdCptPort
+*19 (IbdCptPort
 uid 112,0
 p (LogicalPort
 m 1
@@ -405,26 +288,153 @@ on 16
 fa [
 (IbdCFA
 l "hAddr"
-p &28
-c &23
+p &18
+c *20 (IbdNet
+d (Decl
+n "maddr"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 7
+)
+uid 52,0
+on 13
+nodes [
+&14
+*21 (IbdHdsComponent
+archFileType "UNKNOWN"
+p [
+*22 (IbdCptPort
+uid 90,0
+p (LogicalPort
+decl (Decl
+n "reset"
+t "std_logic"
+o 1
+)
+)
+)
+*23 (IbdCptPort
+uid 91,0
+p (LogicalPort
+decl (Decl
+n "clock"
+t "std_logic"
+o 2
+)
+)
+)
+*24 (IbdCptPort
+uid 92,0
+p (LogicalPort
+m 1
+decl (Decl
+n "output_reset"
+t "std_logic"
+o 3
+)
+)
+)
+*25 (IbdCptPort
+uid 93,0
+p (LogicalPort
+m 1
+decl (Decl
+n "maddr"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 4
+)
+)
+)
+*26 (IbdCptPort
+uid 94,0
+p (LogicalPort
+decl (Decl
+n "mdata"
+t "std_logic_vector"
+b "(15 DOWNTo 0)"
+o 5
+)
+)
+)
+*27 (IbdCptPort
+uid 95,0
+p (LogicalPort
+m 1
+decl (Decl
+n "datamem"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 6
+)
+)
+)
+*28 (IbdCptPort
+uid 96,0
+p (LogicalPort
+m 1
+decl (Decl
+n "write"
+t "std_logic"
+o 7
+)
+)
+)
+*29 (IbdCptPort
+uid 97,0
+p (LogicalPort
+m 1
+decl (Decl
+n "addr"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 8
+)
+)
+)
+*30 (IbdCptPort
+uid 98,0
+p (LogicalPort
+decl (Decl
+n "mdata3"
+t "std_logic_vector"
+b "(15 DOWNTO 0)"
+o 9
+)
+)
+)
+]
+inst "U_1"
+lib "Modic_Pipeline_lib"
+ele [
+]
+ordering 1
+uid 62,0
+name "Processor"
+on 10
+fa [
+(IbdCFA
+l "maddr"
+p &25
+c &20
 )
 (IbdCFA
-l "rst"
-p &25
-c *30 (IbdNet
+l "output_reset"
+p &24
+c *31 (IbdNet
 d (Decl
 n "output_reset"
 t "std_logic"
 o 9
 )
 uid 56,0
-on 17
+on 15
 nodes [
-&24
-*31 (IbdHdsComponent
+&14
+*32 (IbdHdsComponent
 archFileType "UNKNOWN"
 p [
-*32 (IbdCptPort
+*33 (IbdCptPort
 uid 118,0
 p (LogicalPort
 decl (Decl
@@ -434,7 +444,7 @@ o 1
 )
 )
 )
-*33 (IbdCptPort
+*34 (IbdCptPort
 uid 119,0
 p (LogicalPort
 decl (Decl
@@ -445,7 +455,7 @@ o 2
 )
 )
 )
-*34 (IbdCptPort
+*35 (IbdCptPort
 uid 120,0
 p (LogicalPort
 decl (Decl
@@ -455,7 +465,7 @@ o 3
 )
 )
 )
-*35 (IbdCptPort
+*36 (IbdCptPort
 uid 121,0
 p (LogicalPort
 decl (Decl
@@ -466,7 +476,7 @@ o 4
 )
 )
 )
-*36 (IbdCptPort
+*37 (IbdCptPort
 uid 122,0
 p (LogicalPort
 m 1
@@ -489,9 +499,14 @@ name "easy_RAM_simu"
 on 19
 fa [
 (IbdCFA
+l "rst"
+p &33
+c &31
+)
+(IbdCFA
 l "hAddr"
-p &35
-c *37 (IbdNet
+p &36
+c *38 (IbdNet
 d (Decl
 n "addr"
 t "std_logic_vector"
@@ -499,17 +514,17 @@ b "(15 DOWNTO 0)"
 o 3
 )
 uid 44,0
-on 11
+on 9
 nodes [
-&31
-&13
+&32
+&21
 ]
 )
 )
 (IbdCFA
 l "hDIn"
-p &33
-c *38 (IbdNet
+p &34
+c *39 (IbdNet
 d (Decl
 n "datamem"
 t "std_logic_vector"
@@ -517,17 +532,17 @@ b "(15 DOWNTO 0)"
 o 5
 )
 uid 48,0
-on 13
+on 11
 nodes [
-&31
-&13
+&32
+&21
 ]
 )
 )
 (IbdCFA
 l "hDOut"
-p &36
-c *39 (IbdNet
+p &37
+c *40 (IbdNet
 d (Decl
 n "hDOut"
 t "std_logic_vector"
@@ -535,32 +550,27 @@ b "(15 DOWNTO 0)"
 o 6
 )
 uid 50,0
-on 14
+on 12
 nodes [
-&31
-&13
+&32
+&21
 ]
 )
 )
 (IbdCFA
-l "rst"
-p &32
-c &30
-)
-(IbdCFA
 l "wr"
-p &34
-c *40 (IbdNet
+p &35
+c *41 (IbdNet
 d (Decl
 n "write"
 t "std_logic"
 o 11
 )
 uid 60,0
-on 19
+on 17
 nodes [
-&31
-&13
+&32
+&21
 ]
 )
 )
@@ -570,14 +580,34 @@ dec [
 ucp [
 ]
 )
-&13
+&21
 ]
 )
 )
 (IbdCFA
-l "hDOut"
+l "addr"
 p &29
-c *41 (IbdNet
+c &38
+)
+(IbdCFA
+l "datamem"
+p &27
+c &39
+)
+(IbdCFA
+l "mdata3"
+p &30
+c &40
+)
+(IbdCFA
+l "write"
+p &28
+c &41
+)
+(IbdCFA
+l "mdata"
+p &26
+c *42 (IbdNet
 d (Decl
 n "mdata"
 t "std_logic_vector"
@@ -585,54 +615,17 @@ b "(15 DOWNTo 0)"
 o 8
 )
 uid 54,0
-on 16
+on 14
 nodes [
-&24
-&13
+&14
+&21
 ]
 )
-)
-]
-dec [
-]
-ucp [
-(IbdPortFA
-f "I: hDIn(15:0)"
-p &26
-c *42 (IbdUcPortConnector
-uid 153,0
-on 9
-nodes [
-&24
-]
-)
-)
-(IbdPortFA
-f "I: wr"
-p &27
-c *43 (IbdUcPortConnector
-uid 155,0
-on 10
-nodes [
-&24
-]
-)
-)
-]
-)
-&13
-]
-)
-)
-(IbdCFA
-l "addr"
-p &21
-c &37
 )
 (IbdCFA
 l "clock"
-p &15
-c *44 (IbdNet
+p &23
+c *43 (IbdNet
 d (Decl
 n "clk"
 t "std_logic"
@@ -640,12 +633,12 @@ o 4
 i "'0'"
 )
 uid 46,0
-on 12
+on 10
 nodes [
-*45 (IbdHdsComponent
+*44 (IbdHdsComponent
 archFileType "UNKNOWN"
 p [
-*46 (IbdCptPort
+*45 (IbdCptPort
 uid 101,0
 p (LogicalPort
 m 1
@@ -657,7 +650,7 @@ i "'1'"
 )
 )
 )
-*47 (IbdCptPort
+*46 (IbdCptPort
 uid 102,0
 p (LogicalPort
 m 1
@@ -681,13 +674,13 @@ on 13
 fa [
 (IbdCFA
 l "clk"
-p &47
-c &44
+p &46
+c &43
 )
 (IbdCFA
 l "reset"
-p &46
-c *48 (IbdNet
+p &45
+c *47 (IbdNet
 d (Decl
 n "reset"
 t "std_logic"
@@ -695,10 +688,10 @@ o 10
 i "'1'"
 )
 uid 58,0
-on 18
+on 16
 nodes [
-&45
-&13
+&44
+&21
 ]
 )
 )
@@ -708,65 +701,93 @@ dec [
 ucp [
 ]
 )
-&13
+&21
 ]
 )
 )
 (IbdCFA
-l "datamem"
-p &19
-c &38
-)
-(IbdCFA
-l "mdata3"
-p &22
-c &39
-)
-(IbdCFA
-l "output_reset"
-p &16
-c &30
-)
-(IbdCFA
-l "write"
-p &20
-c &40
-)
-(IbdCFA
-l "mdata"
-p &18
-c &41
-)
-(IbdCFA
 l "reset"
-p &14
+p &22
+c &47
+)
+]
+dec [
+]
+ucp [
+]
+)
+]
+)
+)
+(IbdCFA
+l "rst"
+p &15
+c &31
+)
+(IbdCFA
+l "hDOut"
+p &19
+c &42
+)
+(IbdCFA
+l "hDIn"
+p &16
+c &13
+)
+(IbdCFA
+l "wr"
+p &17
+c *48 (IbdNet
+d (Decl
+n "wr"
+t "std_logic"
+o 11
+)
+uid 274,0
+on 19
+nodes [
+&12
+&14
+]
+)
+)
+]
+dec [
+]
+ucp [
+]
+)
+]
+)
+)
+(IbdNFA
+io "I"
 c &48
 )
 ]
 dec [
 ]
-ucp [
-]
 )
-&45
-&24
-&31
+&21
+&44
+&14
+&32
 ]
 )
 rowContainer (IbdRowContainer
 uid 16,0
 optionalChildren [
-&37
-&44
 &38
-&39
-&23
-&41
-&30
-&48
-&40
-&42
 &43
+&39
+&40
+&20
+&42
+&31
+&47
+&41
+&13
+&48
 ]
 )
 )
@@ -840,7 +861,7 @@ d 35
 )
 ]
 d 35
-comp &13
+comp &21
 )
 *61 (MHdsCompInstCol
 p 11
@@ -860,7 +881,7 @@ d 35
 )
 ]
 d 35
-comp &45
+comp &44
 )
 *64 (MHdsCompInstCol
 p 14
@@ -880,7 +901,7 @@ d 35
 )
 ]
 d 35
-comp &24
+comp &14
 )
 *67 (MHdsCompInstCol
 p 17
@@ -900,7 +921,7 @@ d 35
 )
 ]
 d 35
-comp &31
+comp &32
 )
 *70 (MExpandCol
 p 1
@@ -952,68 +973,65 @@ uid 37,0
 *79 (MUcPortGroupRow
 p 8
 uid 38,0
-optionalChildren [
-*80 (MUcPortRow
-p 9
-uid 154,0
-ucport &42
 )
-*81 (MUcPortRow
-p 10
-uid 156,0
-ucport &43
-)
-]
-expandCol &70
-)
-*82 (MEmptyRow
+*80 (MEmptyRow
 p 20
 uid 39,0
 )
+*81 (MNetRow
+p 9
+uid 45,0
+net &38
+)
+*82 (MNetRow
+p 10
+uid 47,0
+net &43
+)
 *83 (MNetRow
 p 11
-uid 45,0
-net &37
+uid 49,0
+net &39
 )
 *84 (MNetRow
 p 12
-uid 47,0
-net &44
+uid 51,0
+net &40
 )
 *85 (MNetRow
 p 13
-uid 49,0
-net &38
+uid 53,0
+net &20
 )
 *86 (MNetRow
 p 14
-uid 51,0
-net &39
+uid 55,0
+net &42
 )
 *87 (MNetRow
 p 15
-uid 53,0
-net &23
+uid 57,0
+net &31
 )
 *88 (MNetRow
 p 16
-uid 55,0
-net &41
+uid 59,0
+net &47
 )
 *89 (MNetRow
 p 17
-uid 57,0
-net &30
+uid 61,0
+net &41
 )
 *90 (MNetRow
 p 18
-uid 59,0
-net &48
+uid 273,0
+net &13
 )
 *91 (MNetRow
 p 19
-uid 61,0
-net &40
+uid 275,0
+net &48
 )
 ]
 )
@@ -1104,7 +1122,7 @@ font "Tahoma,10,0"
 )
 uid 17,0
 )
-lastUid 238,0
+lastUid 275,0
 genericsCommonDM (CommonDM
 ldm (LogicalDM
 emptyRow *92 (LEmptyRow
