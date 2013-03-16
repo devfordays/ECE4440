@@ -71,6 +71,7 @@ ARCHITECTURE Five_Stage_Pipeline OF Five_Stage_Pipeline IS
   signal tempzero : std_logic := '0';
   
   signal read : std_logic := '0';
+  signal ack : std_logic := '0';
   
   
   
@@ -92,7 +93,6 @@ BEGIN
   Mem : entity work.Mem_Stage(Mem_Stage)
     port map (destination, maddr, mdelayfrommem, extradata, result, control, mdata3, data, addr, mdelaytofetch, datamem, write, desty, clock, vector, read);
 
-
   WB : entity work.WB_Stage(WB_Stage)
     port map (desty, data, vector, clock, destin, dataout, last_control);
       
@@ -100,10 +100,12 @@ BEGIN
     --port map (addr, datamem, clock, vector(2), mdata);
       
   FetchStageMemory : entity work.easy_RAM_simu(behavior)
-    port map(reset, zero16, zero, maddr, mdata);    
+    port map(reset, zero16, zero, maddr, mdata);  
       
-  MemStageMemory : entity work.easy_RAM_simu(behavior)
-    port map(reset, datamem, write, addr, mdata3);
+  --MemStageMemory : entity work.easy_RAM_simu(behavior)
+    --port map(reset, datamem, write, addr, mdata3);
+    MemStageMemory : entity work.easy_RAM_simu(behavior)
+      port map(reset, datamem, write, addr, mdata3);
       
   --RegisterTracker : entity work.Register_Tracker(Register_Tracker)
     --port map (RFA0, RFA1, ResA, destin, controlvector(17), controlvector(16), W, last_control(0), clock, dirty);

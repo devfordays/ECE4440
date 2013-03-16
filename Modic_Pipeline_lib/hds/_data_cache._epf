@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Data_Cache
+DEFAULT_FILE atom Data_Cache_Data_Cache.vhd

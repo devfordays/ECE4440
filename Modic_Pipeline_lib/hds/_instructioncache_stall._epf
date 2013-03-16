@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom InstructionCache_stall
+DEFAULT_FILE atom InstructionCache_stall_InstructionCache_stall.vhd

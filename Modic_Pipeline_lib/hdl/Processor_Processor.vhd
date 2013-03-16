@@ -13,6 +13,8 @@ USE ieee.std_logic_arith.all;
 
 ENTITY Processor IS
   PORT( reset, clock: IN std_logic; 
+    delay_from_Fetch_cache : IN std_logic;
+    mdelayfrommem : IN std_logic;
         maddr: OUT std_logic_vector(15 DOWNTO 0); --fetch
         mdata: IN std_logic_vector(15 DOWNTo 0); --fetch
         
@@ -37,7 +39,9 @@ ARCHITECTURE Processor OF Processor IS
   signal one : std_logic := '1';
   
   signal RFD0, RFD1 : std_logic_vector(15 DOWNTO 0);
+  
   signal dirty : std_logic;
+  
   signal left, right, extra : std_logic_vector(15 DOWNTO 0);
   signal RFA0, RFA1, dest : std_logic_vector(3 DOWNTO 0);
   signal controlvector : std_logic_vector(17 DOWNTO 0);
@@ -48,8 +52,14 @@ ARCHITECTURE Processor OF Processor IS
   signal destination : std_logic_vector(3 DOWNTO 0);
   signal control : std_logic_vector(17 DOWNTO 0);
   
+  
+  
   --signal mdelayfrommem, write : std_logic;
-  signal mdelayfrommem : std_logic := '0';
+  --signal mdelayfrommem : std_logic := '0';
+  
+  
+  
+  
   signal mdelaytofetch : std_logic := '0';
   
   --signal data, addr, datamem : std_logic_vector(15 DOWNTO 0);
@@ -68,7 +78,7 @@ BEGIN
   --Fetch : entity work.Fetch_Stage(Fetch_Stage)
     --port map (jump, dirty, zero, reset, zero, clock, mdata, jaddr, maddr, instr, PCVal);
       Fetch : entity work.Fetch_Stage(Fetch_Stage)
-        port map (jump, dirty, mdelaytofetch, reset, zero, clock, mdata, result, maddr, instr, PCVal);
+        port map (jump, delay_from_Fetch_cache, mdelaytofetch, reset, zero, clock, mdata, result, maddr, instr, PCVal);
 
   --Decode : entity work.Decode_Stage(Decode_Stage)
     --port map (PCVal, instr, RFD0, RFD1, clock, dirty, left, right, extra, RFA0, RFA1, dest, controlvector, ResA, W); 

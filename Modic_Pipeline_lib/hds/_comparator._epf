@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom comparator
+DEFAULT_FILE atom comparator_comparator.vhd

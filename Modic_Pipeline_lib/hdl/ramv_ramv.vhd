@@ -46,8 +46,8 @@ ARCHITECTURE struct OF ramv IS
 
    -- ModuleWare signal declarations(v1.9) for instance 'U_0' of 'ramsp'
    TYPE MW_U_0RAM_TYPE IS ARRAY (((2**3) -1) DOWNTO 0) OF std_logic;
-   --SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE := (OTHERS => '0');
-   SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE;
+   SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE := (OTHERS => '0');
+   --SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE;
    SIGNAL mw_U_0addr_reg: std_logic_vector(2 DOWNTO 0);
 
 
@@ -65,7 +65,8 @@ BEGIN
          mw_U_0addr_reg <= addr;
       END IF;
    END PROCESS u_0ram_p_proc;
-   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   --dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(addr)));
 
    -- Instance port mappings.
 

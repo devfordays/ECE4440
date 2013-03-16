@@ -14,9 +14,9 @@ ENTITY ramtag IS
    PORT( 
       addr : IN     std_logic_vector (2 DOWNTO 0);
       clk  : IN     std_logic;
-      din  : IN     std_logic_vector (10 DOWNTO 0);
+      din  : IN     std_logic_vector (12 DOWNTO 0);
       we   : IN     std_logic;
-      dout : OUT    std_logic_vector (10 DOWNTO 0)
+      dout : OUT    std_logic_vector (12 DOWNTO 0)
    );
 
 -- Declarations
@@ -45,8 +45,8 @@ ARCHITECTURE struct OF ramtag IS
 
 
    -- ModuleWare signal declarations(v1.9) for instance 'U_0' of 'ramsp'
-   TYPE MW_U_0RAM_TYPE IS ARRAY (((2**3) -1) DOWNTO 0) OF std_logic_vector(10 DOWNTO 0);
-   SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE ;--:= (OTHERS => "00000000000");
+   TYPE MW_U_0RAM_TYPE IS ARRAY (((2**3) -1) DOWNTO 0) OF std_logic_vector(12 DOWNTO 0);
+   SIGNAL mw_U_0ram_table : MW_U_0RAM_TYPE ;--:= (OTHERS => "0000000000000");
    SIGNAL mw_U_0addr_reg: std_logic_vector(2 DOWNTO 0);
 
 
@@ -64,7 +64,8 @@ BEGIN
          mw_U_0addr_reg <= addr;
       END IF;
    END PROCESS u_0ram_p_proc;
-   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   --dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(addr)));
 
    -- Instance port mappings.
 

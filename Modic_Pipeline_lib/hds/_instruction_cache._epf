@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Instruction_Cache
+DEFAULT_FILE atom Instruction_Cache_Instruction_Cache.vhd

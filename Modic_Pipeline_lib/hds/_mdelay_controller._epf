@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom mdelay_controller
+DEFAULT_FILE atom mdelay_controller_mdelay_controller.vhd

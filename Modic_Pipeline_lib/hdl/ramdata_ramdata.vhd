@@ -64,7 +64,8 @@ BEGIN
          mw_U_0addr_reg <= addr;
       END IF;
    END PROCESS u_0ram_p_proc;
-   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   --dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(mw_U_0addr_reg)));
+   dout <= mw_U_0ram_table(CONV_INTEGER(unsigned(addr)));
 
    -- Instance port mappings.
 

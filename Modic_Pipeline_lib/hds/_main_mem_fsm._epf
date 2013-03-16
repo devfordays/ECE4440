@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Main_Mem_FSM
+DEFAULT_FILE atom Main_Mem_FSM_Main_Mem_FSM.vhd

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Main_Memory
+DEFAULT_FILE atom Main_Memory_Main_Memory.vhd

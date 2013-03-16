@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom new_nand_gate
+DEFAULT_FILE atom new_nand_gate_new_nand_gate.vhd

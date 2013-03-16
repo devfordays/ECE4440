@@ -20,7 +20,10 @@ ARCHITECTURE Pipeline_test_bench OF Pipeline_test_bench IS
   signal reset : std_logic := '1';
 BEGIN
   
-  dut : entity work.Five_Stage_Pipeline(Five_Stage_Pipeline)
+  --dut : entity work.Five_Stage_Pipeline(Five_Stage_Pipeline)
+    --port map (reset, clock);
+      
+  dut : entity work.Five_Stage_Pipeline_with_Cache(Five_Stage_Pipeline_with_Cache)
     port map (reset, clock);
       
   --reset <= '0' after 100 ns;
